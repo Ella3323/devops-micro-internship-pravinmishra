@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+To gain hands-on experience applying agentic AI to real DevOps workflows, CI/CD, infrastructure automation, & cloud deployments — & build practical cloud/DevOps skills for remote DevOps roles.
 
 ---
 
@@ -55,11 +55,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Consistency beats motivation.
 
 ### Evidence from my life
 
-Add your answer here...
+I committed to a 30-day LinkedIn posting challenge. Some days I didn't feel like posting, but I did it anyway. The days I showed up without motivation are the ones that built the habit.
 
 ---
 
@@ -67,11 +67,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+You learn faster by breaking things than by reading about them.
 
 ### Evidence from my life
 
-Add your answer here...
+I deploy a bank app project that kept breaking, YAML errors, Terraform locks, runner registration failing. Every failure taught me more than any tutorial. I understand my pipeline now because I fixed it myself.
 
 ---
 
@@ -79,11 +79,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Asking for help is faster than struggling alone.
 
 ### Evidence from my life
 
-Add your answer here...
+When I got stuck on my self-hosted runner setup, trying to figure it out solo wasted hours. Reaching out to my mentors or the community solved it in minutes.
 
 ---
 
@@ -135,11 +135,21 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+Pamela Ezeotika 2.0( 2030) 
+
+Four years from now, I'm not chasing titles anymore. I've built systems, in my career and in my life, that run without needing motivation to show up every day.
+
+I started this journey from IAM Security, not knowing where cloud and DevOps would take me. Today I'm building on AWS, deploying with Terraform and Kubernetes, and shipping real infrastructure, not just certificates. 
+
+Every project taught me something theory never could: how to debug under pressure, how to read a system that's failing and stay calm, how to trust the process even when the process is messy.
+
+By 2.0, I'm not just writing pipelines. I'm the engineer companies trust with their production systems. I'm mentoring the next Ella who's scared to start. I'm building things that outlast the hype and the hard days I almost quit on.
+
+This isn't about arriving somewhere. It's about who I'm becoming one deployment, one debug, one decision at a time.
 
 ### Public Link
 
-Paste your link here:
+[Paste your link here:](https://www.linkedin.com/posts/pamela-ezeotika_pamela-ezeotika-20-2030-four-years-from-activity-7478327854242652160-yNNC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E)
 
 `__________________________`
 
@@ -173,7 +183,9 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+There have been times when I chose shortcuts instead of doing things the right way, mostly because of pressure, fear, or wanting faster results. At first, it felt like an easy solution, but deep down I felt uncomfortable. I experienced guilt because I knew I was not fully being honest with myself. I also felt stress and fear of being exposed or facing consequences later.
+
+Over time, I realized that shortcuts often bring temporary relief but create long-term discomfort. That experience taught me that integrity matters, even when no one is watching. Now, I try to be more intentional, patient, and honest in my decisions because peace of mind is worth more than temporary convenience.
 
 ---
 
@@ -199,16 +211,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. Atomic Habits by James Clear
+2. The 7 Habits of Highly Effective People by Stephen Covey
+3. Deep Work — by Cal Newport
+4. The Psychology of Money by Morgan Housel
+5. Think and Grow Rich by Napoleon Hill
+6. How to Win Friends and Influence People by Dale Carnegie
+7. The Lean Startup by Eric Ries
+8. Start With Why by Simon Sinek
+9. How Not to Die by Michael Greger
+10. Why We Sleep by Mattew Walker
 
 ---
 
@@ -237,16 +249,21 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Learning hours per week
+* Complete a lab project each week
+* Publish a post on Linkedin at least 3x a week
+* Deep work sessions per week
+* Monthly savings and spending tracker
+* Family Time
+* Screen time / distractions
+* Workout / physical activity
+* Sleep hours and energy level
+* Hands-on lab practice sessions
+
+
+
+
+
 
 ---
 
@@ -270,9 +287,10 @@ Examples:
 
 **Yes / No**
 
-Answer:
+Answer: Yes
+I did a brain dump of the major things on my mind. Most of my thoughts are around growing in cloud engineering, improving my technical skills, staying consistent with learning, completing assignments, and preparing for job opportunities. I also wrote down personal responsibilities, financial goals, family commitments, and areas where I need better discipline. Doing this helped me organize my thoughts and reduce mental clutter.
 
-Add your answer here...
+
 
 ---
 
@@ -290,7 +308,10 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Monday:8AM -12PM Work
+Tuesday -Friday: 8AM -6PM Work
+Saturday: DMI Session
+Sunday: Church, Weekly review
 
 ---
 
@@ -298,11 +319,12 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+Monday: 1PM - 4PM
+Tuesday - Friday 7pm -9pm
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+4-6 Sessions
 
 ---
 
@@ -316,7 +338,11 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+Keep my phone on silent during study sessions.
+No social media during focus hours.
+Use a quiet and clean workspace for learning.
+Focus on one task at a time and avoid multitasking.
+Take short breaks only after completing a study block.
 
 ---
 
@@ -324,19 +350,44 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I realized that I am capable of learning difficult things when I stay consistent and patient with myself. I also noticed that progress does not always have to be fast; small daily improvements matter. What matters most is showing up and putting in the work every day.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+One weakness I noticed is overthinking and sometimes doubting myself when things feel difficult. This can lead to procrastination and slow down my progress. I also noticed that distractions, especially from my phone, affect my focus more than I thought.
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will study consistently from 7:00 PM – 9:00 PM, Monday to Friday, with my phone away from me.
+I will use the Pomodoro technique (50 minutes focus + 10 minutes break) to stay productive and maintain concentration.
 
 ### LinkedIn Post
+It’s Friday 💕
 
-Paste your LinkedIn post link here:
+Week 1 of DMI Cohort-3 (Agentic AI) is done ✅
+
+This week was more than just learning about Agentic AI. It pushed me to reflect deeply on my mindset, beliefs, and habits.
+
+I had to pause and ask myself some hard questions: What beliefs have been limiting me? What truth am I choosing to live by? What habits are helping or slowing me down?
+
+One major thing I realized this week is that growth is not just about learning new skills. Sometimes, real growth starts from clearing mental clutter and fixing your mindset first.
+
+I’m grateful for how much I’ve learned this week and also for the areas where I know I still need to improve.
+
+One commitment I’m making from this week:
+✨ Dedicated deep work every Wednesday – Friday evening for 2-4 hours
+✨ No phone
+✨ Zero social media distractions
+
+Small progress every day will compound.
+
+For what I accomplished this week, I’m grateful.
+
+For what I didn’t accomplish, next week is another opportunity to do better 💪
+
+Cheers to growth, consistency, and becoming better every day.
+
+Happy Friday and have a lovely weekend everyone 💕🚀
 
 `__________________________`
 
@@ -344,7 +395,7 @@ Paste your LinkedIn post link here:
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
+- LinkedIn Post URL: **https://www.linkedin.com/posts/pamela-ezeotika_its-friday-week-1-of-dmi-cohort-3-agentic-activity-7478702825561317376-PTq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E**  
 - Blog / Medium : **ADD LINK HERE**  
 
 ---
