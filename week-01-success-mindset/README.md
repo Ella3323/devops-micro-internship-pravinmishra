@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-To gain hands-on experience applying agentic AI to real DevOps workflows, CI/CD, infrastructure automation, & cloud deployments — & build practical cloud/DevOps skills for remote DevOps roles.
+One belief I hold that many people around me may disagree with is that consistency matters more than motivation. I believe motivation comes and goes because feelings can change daily, but consistency is what produces real results over time. Even on days when I don’t feel motivated, showing up and doing the work still moves me forward. To me, long-term success is built through small, consistent efforts repeated daily, not just moments of excitement or inspiration.
 
 ---
 
