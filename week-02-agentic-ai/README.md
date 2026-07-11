@@ -237,10 +237,10 @@ Screenshot 6 — Claude refusing JavaScript request based on memory rule
 
 ## Task 9: LinkedIn Post
 
-**Post:**  https://www.linkedin.com/posts/chukwuemelie-kelvin-nebeolisa_dmibypravinmishra-agenticai-claudecode-activity-7481126360137191424-Bria?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFkRTbwBQwNlgLe0f2iCwnfwUH4yLRQA4Y4
+**Post:**  https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-ugcPost-7481442776996454400-2ym7/?utm_source=share&utm_medium=member_android&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 
-![Task 9](./screenshots/ASSIGNMENT%20LINKEDIN2.png)
+![Task 9](./screenshots/Assignment%20Linkedin2.png)
 
 
 ## Task 10: Week 2 Reflection Blog
@@ -258,9 +258,9 @@ Screenshot 6 — Claude refusing JavaScript request based on memory rule
 
 ## Task 12: BLOG POST
 
-![Task 12](./screenshots/ASSIGNMENT%20BLOG.png)
+![Task 12
 
-**POST:** https://medium.com/@chukwuemelieoguejiofor/reflection-week-2-cbea007730bf
+**POST:** 
 
 
 
