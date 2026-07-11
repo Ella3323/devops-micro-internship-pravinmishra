@@ -251,9 +251,9 @@ Screenshot 6 — Claude refusing JavaScript request based on memory rule
 ## Task 11: LinkedIn Post 
 
 
-![Task 11](./screenshots/ASSIGNMENT%20LINKEDIN3.png)
+![Task 11](./screenshots/Assignment%20Linkedin3.png)
 
-**Post:** https://www.linkedin.com/posts/chukwuemelie-kelvin-nebeolisa_dmibypravinmishra-agenticai-claudecode-activity-7481146171315453952-NJPi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFkRTbwBQwNlgLe0f2iCwnfwUH4yLRQA4Y4
+**Post:** https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-share-7481445688669704192-sM3Q/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 
 ## Task 12: BLOG POST
