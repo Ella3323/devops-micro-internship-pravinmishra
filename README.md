@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Pamela Chidinma Ezeotika |
+| **LinkedIn** | [pamela-ezeotika](www.linkedin.com/in/pamela-ezeotika) |
+| **Location** | Abia, Nigeria |
+| **Background** | Cloud & DevOps Engineer |
+| **Goal** | To gain hands-on experience applying agentic AI to real DevOps workflows, CI/CD, infrastructure automation, & cloud deployments & to build practical cloud/DevOps skills for remote DevOps roles. |
 
 ---
 
