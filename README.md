@@ -133,9 +133,9 @@ Week 02 → Agentic AI with Claude Code
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_devops-micro-internship-dmi-by-pravin-activity-7465375946863308801-r3Fa? | — |
+| 01 | Success Mindset |✅ Completed | ✅ Completed| https://www.linkedin.com/posts/pamela-ezeotika_pamela-ezeotika-20-2030-four-years-from-activity-7478327854242652160-yNNC? | — |
+| 02 | Agentic AI with Claude Code | ✅ Completed| ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH? | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
