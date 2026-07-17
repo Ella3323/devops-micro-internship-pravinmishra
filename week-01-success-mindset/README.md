@@ -41,13 +41,7 @@ One belief I hold that many people around me may disagree with is that consisten
 
 ### Definition
 
-Objective truths do not depend on opinions. They hold true regardless of how people feel.
 
-Write each truth in this format:
-
-**Truth:** (1 sentence)
-
-**Evidence from my life:** (2–4 lines: what you tried + what happened)
 
 ---
 
@@ -91,47 +85,18 @@ When I got stuck on my self-hosted runner setup, trying to figure it out solo wa
 
 ### Instructions
 
-Write as if a journalist is writing about you **3 to 7 years from now** (not 20 years).
+
 
 **Minimum 300 words.**
 
 ### Rules
 
-* Write in past tense, like it already happened.
-* Don't use "likes to / wants to / hopes to."
-* Use specifics:
 
-  * built
-  * shipped
-  * led
-  * published
-  * earned
-  * relocated
-  * contributed
-* Include skills proof:
+ 
 
-  * projects
-  * portfolios
-  * GitHub
-  * blogs
-  * certifications
-  * job role
-  * leadership
-  * community contribution
-* Add 1–3 images if you can (optional but powerful).
 
-### Publish It Publicly On Any ONE
 
-* LinkedIn
-* Medium
-* WordPress
-* Blogspot
-* Personal blog
-* Portfolio page
 
-Include this line:
-
-> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
 
 ## Your Article
 
@@ -159,23 +124,9 @@ This isn't about arriving somewhere. It's about who I'm becoming one deployment,
 
 ### Important
 
-You don't need to write the full story.
-
-Focus on the feeling:
-
-* guilt
-* fear
-* shame
-* stress
-* regret
-* numbness
-* etc.
-
-This is about self-awareness, not judgment.
 
 ### Answer Format
 
-**Yes / No**
 
 If Yes:
 
