@@ -1,4 +1,4 @@
-# Week 02 — Linux for DevOps
+g# Week 02 — Linux for DevOps
 
 ## Assignment Overview
 
