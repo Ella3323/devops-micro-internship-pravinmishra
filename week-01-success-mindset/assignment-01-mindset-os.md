@@ -2,7 +2,7 @@
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
----
+
 
 ## Purpose (Read This First)
 
@@ -19,7 +19,7 @@ This is you building your **Mindset OS** — the system you will use for the nex
 
 You will reuse this in later weeks. So do it properly once.
 
----
+
 
 # Assignment 1. What is something you believe to be true that most people around you would disagree with?
 
@@ -35,7 +35,7 @@ You will reuse this in later weeks. So do it properly once.
 
 One belief I hold that many people around me may disagree with is that consistency matters more than motivation. I believe motivation comes and goes because feelings can change daily, but consistency is what produces real results over time. Even on days when I don’t feel motivated, showing up and doing the work still moves me forward. To me, long-term success is built through small, consistent efforts repeated daily, not just moments of excitement or inspiration.
 
----
+
 
 # Assignment 2. What are the top 3 objective truths you discovered through experimentation and results?
 
@@ -43,7 +43,6 @@ One belief I hold that many people around me may disagree with is that consisten
 
 
 
----
 
 ## Truth #1
 
@@ -55,7 +54,7 @@ Consistency beats motivation.
 
 I committed to a 30-day LinkedIn posting challenge. Some days I didn't feel like posting, but I did it anyway. The days I showed up without motivation are the ones that built the habit.
 
----
+
 
 ## Truth #2
 
@@ -67,7 +66,7 @@ You learn faster by breaking things than by reading about them.
 
 I deploy a bank app project that kept breaking, YAML errors, Terraform locks, runner registration failing. Every failure taught me more than any tutorial. I understand my pipeline now because I fixed it myself.
 
----
+
 
 ## Truth #3
 
@@ -79,7 +78,7 @@ Asking for help is faster than struggling alone.
 
 When I got stuck on my self-hosted runner setup, trying to figure it out solo wasted hours. Reaching out to my mentors or the community solved it in minutes.
 
----
+
 
 # Assignment 3. What does your 2.0 version look like?
 
@@ -97,6 +96,10 @@ When I got stuck on my self-hosted runner setup, trying to figure it out solo wa
 
 
 
+
+Include this line:
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/Ella3323.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
 
 ## Your Article
 
@@ -118,7 +121,7 @@ This isn't about arriving somewhere. It's about who I'm becoming one deployment,
 
 `Add your URL here`
 
----
+
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?
 
@@ -138,7 +141,7 @@ There have been times when I chose shortcuts instead of doing things the right w
 
 Over time, I realized that shortcuts often bring temporary relief but create long-term discomfort. That experience taught me that integrity matters, even when no one is watching. Now, I try to be more intentional, patient, and honest in my decisions because peace of mind is worth more than temporary convenience.
 
----
+
 
 # Assignment 5. What are 10 non-fiction books you plan to read in the next 1 year?
 
@@ -173,7 +176,7 @@ Choose books that improve:
 9. How Not to Die by Michael Greger
 10. Why We Sleep by Mattew Walker
 
----
+
 
 # Assignment 6. What are the things you will measure regularly in your life and career?
 
@@ -216,7 +219,7 @@ List topics only. No need to share numbers.
 
 
 
----
+
 
 # Assignment 7. Brain Dump + 5-Month System Plan
 
@@ -243,7 +246,7 @@ I did a brain dump of the major things on my mind. Most of my thoughts are aroun
 
 
 
----
+
 
 ## Step 2: Your 5-Month Routine + Focus Blocks
 
@@ -264,7 +267,7 @@ Tuesday -Friday: 8AM -6PM Work
 Saturday: DMI Session
 Sunday: Church, Weekly review
 
----
+
 
 ### Focus Blocks
 
@@ -277,7 +280,7 @@ Tuesday - Friday 7pm -9pm
 
 4-6 Sessions
 
----
+
 
 ### Distraction Rules
 
@@ -295,7 +298,7 @@ Use a quiet and clean workspace for learning.
 Focus on one task at a time and avoid multitasking.
 Take short breaks only after completing a study block.
 
----
+
 
 # Reflection – Week 1
 
@@ -342,14 +345,14 @@ Happy Friday and have a lovely weekend everyone 💕🚀
 
 `Add your URL here`
 
----
+
 
 ## 10. Proof of Work
 
 - LinkedIn Post URL: **https://www.linkedin.com/posts/pamela-ezeotika_its-friday-week-1-of-dmi-cohort-3-agentic-activity-7478702825561317376-PTq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E**  
 - Blog / Medium : **ADD LINK HERE**  
 
----
+
 
 ## 📌 About DMI & CloudAdvisory
 
@@ -368,6 +371,6 @@ It helps learners build strong DevOps foundations with hands-on experience.
 - 🔗 **Pravin Mishra (LinkedIn):** https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
 - 🏢 **CloudAdvisory (LinkedIn):** https://www.linkedin.com/company/thecloudadvisory/
 
----
+
 
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track*
