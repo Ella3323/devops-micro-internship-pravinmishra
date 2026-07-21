@@ -20,7 +20,7 @@ Create the required `.claude/skills/` directory structure for all skills.
 
 #### Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment3 SS1.png>)
 
 ---
 
@@ -34,13 +34,13 @@ Place all required skill files into their correct directories and verify their c
 
 #### Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment3 SS2.png>)
 
 ---
 
 #### Screenshot 3 — Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment3 SS3.png>)
 
 ---
 
@@ -54,13 +54,13 @@ Execute the `/scaffold-terraform` skill to generate a full Terraform infrastruct
 
 #### Screenshot 4 — Claude's response showing the scaffold complete with the file list
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment3 SS4.png>)
 
 ---
 
 #### Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment3 SS5.png>)
 
 ---
 
@@ -74,7 +74,8 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment3 SS6a.png>)
+![alt text](<screenshots/Assignment3 SS6b.png>)
 
 ---
 
@@ -88,13 +89,13 @@ Add your screenshot here.
 
 ## GitHub Repository URL
 
-Paste your forked repository URL here:
+https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 
 `Add your URL here`
 
 ## LinkedIn post URL
 
-Paste your forked repository URL here:
+https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-ugcPost-7481239814198091776-5fUU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 `Add your URL here`
 ---
