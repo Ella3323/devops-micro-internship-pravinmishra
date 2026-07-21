@@ -25,8 +25,9 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
-
+![alt text](Week0-SS1.png)
+![alt text](Week0-SS1B.png)
+![alt text](Week0-SS1C.png)
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
@@ -34,7 +35,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+I learned that writing a clear prompt helps ChatGPT give better answers. I also learned that ChatGPT can explain technical topics in simple English with real-life examples, which makes learning easier.
 
 ---
 
@@ -59,7 +60,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When someone visits epicreads.com, their request is broken into small pieces called packets. This process is called packet switching. The packets travel across the internet to the server in Finland using the server's IP address, which is the unique address of the server. TCP/IP makes sure the packets are delivered correctly and in the right order. When the packets reach the server, HTTP or HTTPS is used to request and deliver the website. HTTPS is more secure because it encrypts the data sent between the user's browser and the server. Finally, the server sends the website back to the user, allowing people from anywhere in the world to access EpicReads.
 
 ---
 
@@ -91,7 +92,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![alt text](Week0-SS2.png)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -102,18 +103,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML
+* React
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Express.js
+* Node.js
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL
+* MongoDB
 
 ---
 
@@ -142,7 +143,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+DNS (Domain Name System) changes a domain name, such as epicreads.com, into an IP address that computers can understand. This allows users to access a website by typing its name instead of remembering numbers. To connect the domain to the IP address 52.172.142.222, an A record is used because it maps a domain name directly to an IPv4 address.
 
 ---
 
@@ -178,7 +179,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![alt text](Week0-SS3.png)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -218,7 +219,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/pamela-ezeotika_devops-micro-internship-dmi-by-pravin-activity-7465375946863308801-r3Fa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 ```
 
 ---
@@ -227,7 +228,41 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+This week I completed my Week 0 Assignment for the DevOps Micro Internship and here is everything I learned 👇
+
+
+
+👉 𝗖𝗵𝗮𝘁𝗚𝗣𝗧 𝗮𝘀 𝗮 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗧𝗼𝗼𝗹 I learned how to write detailed, structured prompts to get clear and beginner-friendly explanations from ChatGPT. Instead of asking vague questions, a good prompt sets the context, asks for examples, and specifies the audience level. This skill alone will make learning any technical concept faster and easier.
+
+
+
+👉𝐈𝐧𝐭𝐞𝐫𝐧𝐞𝐭 & 𝐍𝐞𝐭𝐰𝐨𝐫𝐤𝐢𝐧𝐠 I learned how the internet actually works behind the scenes. When you visit a website, your request is broken into small pieces called Packet Switching, routed using your device's IP Address, delivered safely using TCP/IP, and displayed in your browser using HTTP/HTTPS. All of this happens in milliseconds every time you open a webpage!
+
+
+
+👉 𝐀𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐀𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐞 I explored two ways to build an app: 
+
+Two-Tier (Frontend + Database) simple and direct. 
+
+Three-Tier (Frontend + Backend + Database) more scalable and secure
+
+
+
+👉 𝐃𝐍𝐒 typing an IP address like 52.172.142.222 to visit a website, you just type epicreads.com and DNS connects the two. To link a domain to an IP address, you use an A Record.
+
+👉 𝐕𝐒 𝐂𝐨𝐝𝐞 𝐒𝐞𝐭𝐮𝐩 I installed Visual Studio Code, opened the terminal, and ran some commands.
+
+
+
+Every big journey starts with Week 0. I am just getting started 🚀
+
+
+
+𝐏.𝐒. This post is part of the FREE DevOps Micro Internship Cohort run by Pravin Mishra. You can start your DevOps journey for free from his YouTube Playlist https://lnkd.in/e7mBgDg6
+
+
+
+hashtag#DevOps hashtag#AWS hashtag#CloudEngineering hashtag#Kubernetes hashtag#LearningInPublic hashtag#VSCode hashtag#Networking hashtag#DNS
 
 ---
 
@@ -235,19 +270,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found it easy to use ChatGPT to understand new topics, learn basic networking concepts, and identify the different layers of application architecture.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+Understanding how networking concepts like TCP/IP, packet switching, and DNS work together was a bit challenging at first. I also needed some time to understand the difference between two-tier and three-tier applications.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I will spend more time practicing the concepts I learned. I also want to improve my understanding of networking and become more confident using DevOps tools and commands.
 
 ---
 

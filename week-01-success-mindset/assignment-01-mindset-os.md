@@ -350,7 +350,7 @@ Happy Friday and have a lovely weekend everyone 💕🚀
 ## 10. Proof of Work
 
 - LinkedIn Post URL: **https://www.linkedin.com/posts/pamela-ezeotika_its-friday-week-1-of-dmi-cohort-3-agentic-activity-7478702825561317376-PTq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E**  
-- Blog / Medium : **ADD LINK HERE**  
+- Blog / Medium : https://medium.com/@ezeotikapamela/pamela-ezeotika-2-0-2030-building-a-career-one-step-at-a-time-676c1bef421d 
 
 
 

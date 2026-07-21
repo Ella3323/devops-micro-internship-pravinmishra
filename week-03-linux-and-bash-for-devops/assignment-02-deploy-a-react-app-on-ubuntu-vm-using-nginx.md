@@ -20,7 +20,7 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 #### Screenshot 1 — Output of `node -v && npm -v` showing installed versions
 
-![Screenshot](Screenshots/Assignment2Task1.png)
+![alt text](screenshots/Assignment2Task2.png)
 
 ---
 
@@ -34,7 +34,7 @@ Install Nginx, start the service, and confirm it is running.
 
 #### Screenshot 2 — Output of `systemctl status nginx --no-pager` showing Active (running)
 
-![Screenshot](Screenshots/Assignment2Task2.png)
+![alt text](screenshots/Assignment2Task2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Clone the project repository and verify the project files are present.
 
 #### Screenshot 3 — Output of `ls` inside the `my-react-app` directory showing project files
 
-![Screenshot](Screenshots/Assignment2Task3.png)
+![alt text](screenshots/Assignment2Task3.png)
 
 ---
 
@@ -62,7 +62,7 @@ Update `App.js` with your full name and the current date.
 
 #### Screenshot 4 — `nano App.js` open showing your full name and date filled in
 
-![Screenshot](Screenshots/Assignment2Task4.png)
+![alt text](screenshots/Assignment2Task4.png)
 
 ---
 
@@ -76,7 +76,7 @@ Install dependencies and generate the production build.
 
 #### Screenshot 5 — Output of `ls` inside `my-react-app` showing the `build/` folder generated
 
-![Screenshot](Screenshots/Assignment2Task5.png)
+![alt text](screenshots/Assignment2Task5.png)
 
 ---
 
@@ -90,7 +90,7 @@ Copy the production build files to the Nginx web root directory.
 
 #### Screenshot 6 — Output of `ls /var/www/html/` showing the deployed build contents
 
-![Screenshot](Screenshots/Assignment2Task6.png)
+![alt text](screenshots/Assignment2Task6.png)
 
 ---
 
@@ -104,13 +104,13 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
 
-![Screenshot](Screenshots/Assignment2Task7.png)
+![alt text](screenshots/Assignment2Task7.png)
 
 ---
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
-![Screenshot](Screenshots/Assignment2Task8.png)
+![alt text](screenshots/Assignment2Task8.png)
 ---
 
 # Task 8 — Test Deployment
@@ -123,7 +123,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
 
-![Screenshot](Screenshots/Assignment2Task9.png)
+![alt text](screenshots/Assignment2Task9.png)
 
 ---
 
