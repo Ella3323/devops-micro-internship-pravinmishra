@@ -32,13 +32,13 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-![Screenshot](Screenshots/Assignment3-Task1-SS3.png)
+![alt text](screenshots/Assignment3-Task1-SS3.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-![Screenshot](Screenshots/Assignment3-Task1-SS4.png)
+![alt text](screenshots/Assignment2Task4.png)
 
 ---
 
@@ -116,19 +116,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-![Screenshot](Screenshots/Assignment3-Task3-SS1.png)
+![alt text](screenshots/Assignment3-Task3-SS1.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-![Screenshot](Screenshots/Assignment3-Task3-SS2.png)
+![alt text](screenshots/Assignment3-Task2-SS2.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-![Screenshot](Screenshots/Assignment3-Task3-SS3.png)
+![alt text](screenshots/Assignment3-Task3-SS3.png)
 
 ---
 
@@ -167,25 +167,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-![Screenshot](Screenshots/Assignment3-Task4-SS1.png)
+![alt text](screenshots/Assignment3-Task4-SS1.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-![Screenshot](Screenshots/Assignment3-Task4-SS2.png)
+![alt text](screenshots/Assignment3-Task4-SS2.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-![Screenshot](Screenshots/Assignment3-Task4-SS3.png)
+![alt text](screenshots/Assignment3-Task4-SS3.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-![Screenshot](Screenshots/Assignment3-Task4-SS4.png)
+![alt text](screenshots/Assignment3-Task4-SS4.png)
 
 ---
 
@@ -215,14 +215,14 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-![Screenshot](Screenshots/Assignment3-Task5-SS1.png)
+![alt text](screenshots/Assignment3-Task5-SS1.png)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-![Screenshot](Screenshots/Assignment3-Task5-SS2a.png)
-![Screenshot](Screenshots/Assignment3-Task5-SS2b.png)
+![alt text](screenshots/Assignment3-Task5-SS2a.png)
+![alt text](screenshots/Assignment3-Task5-SS2b.png)
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
@@ -251,19 +251,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-![Screenshot](Screenshots/Assignment3-Task6-SS1.png)
+![alt text](screenshots/Assignment3-Task6-SS1.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-![Screenshot](Screenshots/Assignment3-Task6-SS2.png)
+![alt text](screenshots/Assignment3-Task6-SS2.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![Screenshot](Screenshots/Assignment3-Task6-SS3.png)
+![alt text](screenshots/Assignment3-Task6-SS3.png)
 
 ---
 
@@ -298,13 +298,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-![Screenshot](Screenshots/Assignment3-Task7-SS1.png)
+![alt text](screenshots/Assignment3-Task7-SS1.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-![Screenshot](Screenshots/Assignment3-Task7-SS2.png)
+![alt text](screenshots/Assignment3-Task7-SS2.png)
 
 ---
 

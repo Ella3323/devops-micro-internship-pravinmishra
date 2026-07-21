@@ -129,7 +129,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
-![Screenshot](Screenshots/Assignment3-Task1-SS1.png)
+![alt text](screenshots/Assignment3-Task1-SS1.png)
 
 ---
 
@@ -147,7 +147,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot — LinkedIn post showing the deployed application
 
-![Screenshot](Screenshots/Linkedin-Post1.png)
+![alt text](screenshots/Linkedin-Post1.png)
 
 ---
 
