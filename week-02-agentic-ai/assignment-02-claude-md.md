@@ -20,8 +20,7 @@ Capture Claude’s response before `CLAUDE.md` exists in the project to establis
 
 #### Screenshot 1 — Claude’s generic response before CLAUDE.md exists (project contains only `index.html`, `style.css`, `images/`, `README.MD`, `privacy.html`, `terms.html`)
 
-Add your screenshot here.
-
+![alt text](<screenshots/Assignment2 SS1.png>)
 ---
 
 # Task 2 — Generate the First Draft with /init
@@ -34,7 +33,9 @@ Generate an initial `CLAUDE.md` file using the `/init` command and review the au
 
 #### Screenshot 2 — The auto-generated CLAUDE.md open in VS Code showing its content
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment2 SS2.png>)
+![alt text](<screenshots/Assignment2 SS2b.png>)
+![alt text](<screenshots/Assignment2 SS2c.png>)
 
 ---
 
@@ -62,7 +63,7 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 #### Screenshot 4 — Claude's specific, detailed answer after reading CLAUDE.md (Claude mentioning S3, CloudFront and Terraform)
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment2 SS4.png>)
 
 ---
 
@@ -82,7 +83,7 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 #### Screenshot 6 — `CLAUDE.md` visible in your GitHub repository after pushing the commit
 
-Add your screenshot here.
+![alt text](<screenshots/Assignment2 SS5.png>)
 
 ---
 
