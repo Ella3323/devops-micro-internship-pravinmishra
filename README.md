@@ -73,11 +73,11 @@ Week 00 → Internet & Networking Basics
 Week 01 → Success Mindset -->
  [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
 
-  Week 02 → Agentic AI with Claude Code 
+Week 02 → Agentic AI with Claude Code 
  [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) 
 
-<!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
+ Week 03 → Linux & Bash for DevOps 
+ [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
 <!-- Week 04 → Git & GitHub -->
 <!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
@@ -131,9 +131,9 @@ Week 01 → Success Mindset -->
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_devops-micro-internship-dmi-by-pravin-activity-7465375946863308801-r3Fa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 01 | Success Mindset | ✅ Completed | ✅ Completed | — | — |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Completed |https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/reflection-week-2-learning-how-ai-can-do-more-than-answer-questions-by-pamela-chidinma-ezeotika-adadc001aa32 |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | ⬜ 🔄 In Progress | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
