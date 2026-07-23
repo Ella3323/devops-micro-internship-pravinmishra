@@ -139,9 +139,8 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### LinkedIn Post URL
 
-[Paste your LinkedIn post URL here:](https://www.linkedin.com/posts/pamela-ezeotika_devops-cloudcomputing-aws-activity-7482671507429732353-xNif?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E)
+(https://www.linkedin.com/posts/pamela-ezeotika_devops-cloudcomputing-aws-activity-7482671507429732353-xNif?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E)
 
-`Add your URL here`
 
 ---
 

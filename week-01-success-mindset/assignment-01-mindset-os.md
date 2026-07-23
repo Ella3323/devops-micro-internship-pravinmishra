@@ -119,7 +119,7 @@ This isn't about arriving somewhere. It's about who I'm becoming one deployment,
 
 (https://www.linkedin.com/posts/pamela-ezeotika_pamela-ezeotika-20-2030-four-years-from-activity-7478327854242652160-yNNC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E)
 
-`Add your URL here`
+(https://www.linkedin.com/posts/pamela-ezeotika_pamela-ezeotika-20-2030-four-years-from-activity-7478327854242652160-yNNC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E)
 
 
 

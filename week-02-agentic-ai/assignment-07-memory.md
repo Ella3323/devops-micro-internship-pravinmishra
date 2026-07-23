@@ -93,7 +93,6 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
-`Add your URL here`
 
 ---
 
@@ -101,7 +100,6 @@ https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claud
 
 https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 
-`Add your URL here`
 
 ---
 

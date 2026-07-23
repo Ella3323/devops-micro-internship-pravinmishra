@@ -112,7 +112,6 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 
-`Add your URL here`
 
 ---
 

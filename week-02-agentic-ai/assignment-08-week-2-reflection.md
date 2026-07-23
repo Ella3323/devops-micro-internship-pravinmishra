@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![alt text](assignment-solutions/images/week-2-Blog.png)
 
 ---
 
@@ -54,7 +54,8 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+ |https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/reflection-week-2-learning-how-ai-can-do-more-than-answer-questions-by-pamela-chidinma-ezeotika-adadc001aa32 
+
 
 ---
 

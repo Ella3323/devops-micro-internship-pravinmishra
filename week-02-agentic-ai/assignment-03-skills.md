@@ -91,7 +91,6 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 
-`Add your URL here`
 
 ## LinkedIn post URL
 

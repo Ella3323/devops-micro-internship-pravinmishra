@@ -119,7 +119,6 @@ Verify the deployed website and Nginx service are healthy.
 #### LinkedIn Post URL
 https://www.linkedin.com/posts/pamela-ezeotika_devops-cloudcomputing-aws-ugcPost-7482666592821035008-TlnP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
-`Add your URL here`
 
 ---
 

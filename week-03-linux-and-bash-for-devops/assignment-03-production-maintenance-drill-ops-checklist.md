@@ -377,7 +377,7 @@ Unused cloud resources should be stopped or terminated to avoid unnecessary cost
 
 https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy-nginx-activity-7483033873354928128-PZBk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
-`Add your URL here`
+
 
 ---
 
