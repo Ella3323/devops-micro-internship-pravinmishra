@@ -211,19 +211,19 @@ Add your PR URL here...
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+I reviewed the AI's draft and made a few small changes to make it more accurate and match the work I actually completed. This made sure the PR description clearly explained my changes.
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+The AI's draft could contain mistakes, miss important details, or describe changes incorrectly. That could confuse reviewers or give the wrong information about the Pull Request.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+The PR should target my own fork because this assignment is my personal work. It prevents accidental changes to the shared upstream repository and keeps my work separate until it is ready.
 
 ---
 
@@ -237,31 +237,29 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
+The Gather step is when the pre-commit hook checked the staged files and the /pr-ready skill used git diff --cached and git status to collect information about the changes.
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
+The Analyze step is when the /pr-ready skill reviewed the staged changes, identified risks like the fake secret and debug statement, and drafted a PR title and description.
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
+The Human Act step is when I fixed the issues, ran git commit, git push, and opened the Pull Request. A human must do these actions because they change the repository, so they should be reviewed and approved instead of being done automatically by AI.
 
 ---
 
 **4. Which step is Verify?**
-
-Add your answer here.
-
+The Verify step is when I confirmed that the pre-commit hook allowed the commit, /pr-ready reported a clean review, and the Pull Request was successfully created.
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
+The pre-commit hook enforces fixed rules, such as blocking secrets and oversized files. The AI skill provides a deeper review by explaining the changes and identifying risks that fixed rules may miss, so using both makes the workflow safer and more reliable.
 
 ---
 
