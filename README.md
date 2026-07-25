@@ -79,8 +79,8 @@ Week 02 → Agentic AI with Claude Code
  Week 03 → Linux & Bash for DevOps 
  [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
-<!-- Week 04 → Git & GitHub -->
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) -->
+ Week 04 → Git & GitHub 
+ [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
@@ -133,8 +133,8 @@ Week 02 → Agentic AI with Claude Code
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_devops-micro-internship-dmi-by-pravin-activity-7465375946863308801-r3Fa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | — |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_pamela-ezeotika-20-2030-four-years-from-activity-7478327854242652160-yNNC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E| https://medium.com/@ezeotikapamela/pamela-ezeotika-2-0-2030-building-a-career-one-step-at-a-time-676c1bef421d  |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Completed |https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/reflection-week-2-learning-how-ai-can-do-more-than-answer-questions-by-pamela-chidinma-ezeotika-adadc001aa32 |
-| 03 | Linux & Bash for DevOps | ⬜ 🔄 In Progress | ⏳ Pending | https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy-nginx-ugcPost-7483028638729379840-P3hr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | — |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | ⬜ |✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy-nginx-ugcPost-7483028638729379840-P3hr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/building-a-safety-net-for-git-how-i-combined-a-simple-script-with-ai-review-2c7fee5a1d37 |
+| 04 | Git & GitHub | ⬜ Not Started | 🔄 In Progress | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
