@@ -21,3 +21,4 @@ if [ "$blocked" -eq 1 ]; then
 echo "Commit rejected. Fix the issues above and try again."
 exit 1
 fi
+#jdjj
