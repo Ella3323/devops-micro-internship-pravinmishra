@@ -116,7 +116,7 @@ Add your screenshot here.
 
 Paste your Pull Request URL here:
 
-`Add your URL here`
+https://github.com/Ella3323/devops-micro-internship-interviews/commit/266501b744ff88b3e65122e1e7a9b069d9725ec8
 
 ---
 
@@ -128,7 +128,7 @@ Paste your Pull Request URL here:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/pamela-ezeotika_i-planted-a-fake-aws-key-in-my-own-code-to-activity-7486372543545925632-OdmZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 ---
 
@@ -151,7 +151,7 @@ Add your screenshot here.
 
 Paste your fork URL here:
 
-`Add your URL here`
+https://github.com/Ella3323/devops-micro-internship-interviews.git
 
 ---
 
