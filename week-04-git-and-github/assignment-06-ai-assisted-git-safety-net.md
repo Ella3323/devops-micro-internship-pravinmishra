@@ -173,7 +173,7 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6SS9.png)
 
 ---
 
@@ -197,13 +197,13 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6SS10.png)
 
 ---
 
 #### PR Link
 
-Add your PR URL here...
+https://github.com/Ella3323/devops-micro-internship-interviews/pull/1
 
 ---
 
@@ -221,21 +221,13 @@ I reviewed the AI's draft and made a few small changes to make it more accurate 
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-<<<<<<< HEAD
-The AI's draft might contain mistakes, leave out important details, or describe the changes incorrectly. This could confuse reviewers and make the Pull Request less accurate.
-=======
 The AI's draft could contain mistakes, miss important details, or describe changes incorrectly. That could confuse reviewers or give the wrong information about the Pull Request.
->>>>>>> feature/ai-pr-ready
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-<<<<<<< HEAD
-The PR should target my own fork because this assignment is my own work. It keeps the shared upstream repository safe and prevents me from making changes to the main project by mistake.
-=======
 The PR should target my own fork because this assignment is my personal work. It prevents accidental changes to the shared upstream repository and keeps my work separate until it is ready.
->>>>>>> feature/ai-pr-ready
 
 ---
 
@@ -249,51 +241,29 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-<<<<<<< HEAD
-The Gather step is when the pre-commit hook checked the staged files and the /pr-ready skill collected information using git status and git diff --cached.
-=======
 The Gather step is when the pre-commit hook checked the staged files and the /pr-ready skill used git diff --cached and git status to collect information about the changes.
->>>>>>> feature/ai-pr-ready
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-<<<<<<< HEAD
-The Analyze step is when the /pr-ready skill reviewed the collected information, identified issues like the fake AWS key and debug statement, and created a draft PR title and description.
-=======
 The Analyze step is when the /pr-ready skill reviewed the staged changes, identified risks like the fake secret and debug statement, and drafted a PR title and description.
->>>>>>> feature/ai-pr-ready
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-<<<<<<< HEAD
-The Human Act step is when I fixed the issues, ran git commit, git push, and opened the Pull Request. A human must perform these actions because they change the Git repository and should always be reviewed and approved before they are carried out.
-=======
 The Human Act step is when I fixed the issues, ran git commit, git push, and opened the Pull Request. A human must do these actions because they change the repository, so they should be reviewed and approved instead of being done automatically by AI.
->>>>>>> feature/ai-pr-ready
 
 ---
 
 **4. Which step is Verify?**
-<<<<<<< HEAD
-
-The Verify step is when I confirmed that the pre-commit hook passed, the /pr-ready skill reported no problems, and the Pull Request was successfully created.
-
-=======
 The Verify step is when I confirmed that the pre-commit hook allowed the commit, /pr-ready reported a clean review, and the Pull Request was successfully created.
->>>>>>> feature/ai-pr-ready
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-<<<<<<< HEAD
-The pre-commit hook blocks known problems, such as fake secrets, using fixed rules. The AI skill provides a broader review by explaining the changes, finding other possible issues, and helping prepare the Pull Request, so using both gives better protection.
-=======
 The pre-commit hook enforces fixed rules, such as blocking secrets and oversized files. The AI skill provides a deeper review by explaining the changes and identifying risks that fixed rules may miss, so using both makes the workflow safer and more reliable.
->>>>>>> feature/ai-pr-ready
 
 ---
 

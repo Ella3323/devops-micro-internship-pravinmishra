@@ -128,11 +128,7 @@ https://github.com/Ella3323/devops-micro-internship-interviews/commit/266501b744
 
 Paste your LinkedIn post URL here:
 
-<<<<<<< HEAD
-`https://www.linkedin.com/posts/pamela-ezeotika_devops-github-opensource-activity-7485932993279201283-6rIq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E`
-=======
 https://www.linkedin.com/posts/pamela-ezeotika_i-planted-a-fake-aws-key-in-my-own-code-to-activity-7486372543545925632-OdmZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
->>>>>>> feature/ai-pr-ready
 
 ---
 
@@ -161,15 +157,15 @@ https://github.com/Ella3323/devops-micro-internship-interviews.git
 
 # Completion Checklist
 
-- [ ] Upstream repository forked to your GitHub account (Screenshot 1)
-- [ ] GitHub authentication configured securely (Screenshot 2)
-- [ ] Fork cloned locally with `origin` and `upstream` configured (Screenshot 3)
-- [ ] Only `pull_request.md` modified, with your own entry added (Screenshots 4–5)
-- [ ] Local default branch synchronized with `upstream/main`, feature branch rebased and pushed (Screenshots 6–7)
-- [ ] Pull Request opened against the correct upstream repository and branch (Screenshots 8–9)
-- [ ] Fork URL and Pull Request URL included
-- [ ] LinkedIn post published and URL submitted
-- [ ] No PAT, password, private key, or authentication secret exposed
+- [x] Upstream repository forked to your GitHub account (Screenshot 1)
+- [x] GitHub authentication configured securely (Screenshot 2)
+- [x] Fork cloned locally with `origin` and `upstream` configured (Screenshot 3)
+- [x] Only `pull_request.md` modified, with your own entry added (Screenshots 4–5)
+- [x] Local default branch synchronized with `upstream/main`, feature branch rebased and pushed (Screenshots 6–7)
+- [x] Pull Request opened against the correct upstream repository and branch (Screenshots 8–9)
+- [x] Fork URL and Pull Request URL included
+- [x] LinkedIn post published and URL submitted
+- [x] No PAT, password, private key, or authentication secret exposed
 
 ---
 

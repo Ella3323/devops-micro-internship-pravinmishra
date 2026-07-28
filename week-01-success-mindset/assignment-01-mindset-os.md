@@ -343,7 +343,7 @@ Cheers to growth, consistency, and becoming better every day.
 
 Happy Friday and have a lovely weekend everyone 💕🚀
 
-`Add your URL here`
+
 
 
 
