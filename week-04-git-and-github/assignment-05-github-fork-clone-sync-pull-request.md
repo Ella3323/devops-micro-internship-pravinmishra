@@ -116,7 +116,7 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 Paste your Pull Request URL here:
 
-`Add your URL here`
+https://github.com/Ella3323/devops-micro-internship-interviews/commit/266501b744ff88b3e65122e1e7a9b069d9725ec8
 
 ---
 
@@ -128,7 +128,11 @@ Paste your Pull Request URL here:
 
 Paste your LinkedIn post URL here:
 
+<<<<<<< HEAD
 `https://www.linkedin.com/posts/pamela-ezeotika_devops-github-opensource-activity-7485932993279201283-6rIq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E`
+=======
+https://www.linkedin.com/posts/pamela-ezeotika_i-planted-a-fake-aws-key-in-my-own-code-to-activity-7486372543545925632-OdmZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
+>>>>>>> feature/ai-pr-ready
 
 ---
 
@@ -151,7 +155,7 @@ Paste your LinkedIn post URL here:
 
 Paste your fork URL here:
 
-`Add your URL here`
+https://github.com/Ella3323/devops-micro-internship-interviews.git
 
 ---
 
