@@ -100,7 +100,7 @@ Switch back to the default branch and confirm that `contact.html` and the Contac
 
 #### Screenshot 9 — Terminal showing the checkout and `ls` output, proving `contact.html` is absent
 
-Add your screenshot here.
+![alt text](screenshots/Assignment3SS9.png)
 
 ---
 
@@ -174,15 +174,15 @@ Delete the merged `feature/contact-page` branch to keep your branch list clean.
 
 # Completion Checklist
 
-- [ ] Repository confirmed clean on the default branch (Screenshot 1)
-- [ ] `feature/contact-page` created and checked out (Screenshot 2)
-- [ ] `contact.html` added in its own commit (Screenshots 3–5)
-- [ ] Homepage Contact link added in a separate commit (Screenshots 6–8)
-- [ ] Default branch proven unchanged before merge (Screenshots 9–10)
-- [ ] Feature branch merged and Contact page verified (Screenshots 11–13)
-- [ ] Graph history reviewed (Screenshot 14)
-- [ ] Optional cleanup completed (Screenshot 15)
-- [ ] No sensitive data exposed
+- [x] Repository confirmed clean on the default branch (Screenshot 1)
+- [x] `feature/contact-page` created and checked out (Screenshot 2)
+- [x] `contact.html` added in its own commit (Screenshots 3–5)
+- [x] Homepage Contact link added in a separate commit (Screenshots 6–8)
+- [x] Default branch proven unchanged before merge (Screenshots 9–10)
+- [x] Feature branch merged and Contact page verified (Screenshots 11–13)
+- [x] Graph history reviewed (Screenshot 14)
+- [x] Optional cleanup completed (Screenshot 15)
+- [x] No sensitive data exposed
 
 ---
 

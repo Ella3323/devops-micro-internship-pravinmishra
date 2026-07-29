@@ -20,13 +20,13 @@ Confirm that Nginx and the React application are healthy before building the aut
 
 #### Screenshot 1 — Output of `systemctl is-active nginx`, `ss -ltn | grep ':80'`, and `curl -I http://localhost`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS1.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort` showing the workspace folder structure
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS2.png)
 
 ---
 
@@ -62,7 +62,7 @@ Tell Claude exactly what this project does and what it is not allowed to do.
 
 #### Screenshot 3 — CLAUDE.md open in VS Code showing all four sections (Project Overview, Incident Workflow, Safety Rules, Output Rules)
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS3.png)
 
 ---
 
@@ -98,7 +98,7 @@ Use Claude Code to inspect the environment and produce a read-only plan before c
 
 #### Screenshot 4 — Claude Code showing the five-check plan and read-only inspection results
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS4.png)
 
 ---
 
@@ -134,25 +134,25 @@ Create one Bash script that gathers consistent Linux and Nginx health evidence.
 
 #### Screenshot 5 — Top section of `linux-triage.sh` showing variables, thresholds, and the checks array
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS5.png)
 
 ---
 
 #### Screenshot 6 — Middle section showing check functions and conditionals
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS6.png)
 
 ---
 
 #### Screenshot 7 — Bottom section showing the loop, summary function, and exit behavior
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS7.png)
 
 ---
 
 #### Screenshot 8 — Output of `bash -n scripts/linux-triage.sh` (no syntax errors) and `ls -l scripts/linux-triage.sh` showing executable permission
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS8.png)
 
 ---
 
@@ -200,13 +200,13 @@ Run the Bash script against the healthy server and verify that it creates a repo
 
 #### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing your Full Name and all five check results
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS9.png)
 
 ---
 
 #### Screenshot 10 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS10.png)
 
 ---
 
@@ -248,13 +248,13 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 11 — `SKILL.md` showing the frontmatter, allowed tool restrictions, and safety rules
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS11.png)
 
 ---
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS12.png)
 
 ---
 
@@ -296,19 +296,19 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS13.png)
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add your screenshot here.
-
+![alt text](screenshots/Assignment6-SS14a.png)
+![alt text](screenshots/Assignment6-SS14b.png)
 ---
 
 #### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS15.png)
 
 ---
 
@@ -360,25 +360,25 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS16.png)
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS17.png)
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS18.png)
 
 ---
 
 #### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+![alt text](screenshots/Assignment6-SS19.png)
 
 ---
 

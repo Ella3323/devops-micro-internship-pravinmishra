@@ -363,19 +363,20 @@ Create a final Bash script using functions to organize reusable code.
 
 #### Screenshot 1 — Content of `final-automation.sh`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment5Task8-SS1a.png)
+![alt text](screenshots/Assignment5Task8-SS1b.png)
 
 ---
 
 #### Screenshot 2 — Output of `./final-automation.sh`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment5Task8-SS2.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -lah` showing all created scripts
 
-Add your screenshot here.
+![alt text](screenshots/Assignment5Task8-SS3.png)
 
 ---
 
@@ -419,15 +420,15 @@ The script uses variables to store values like the service name and report path,
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy-nginx-activity-7483033873354928128-PZBk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
-`Add your URL here`
+
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/Linkedin-Post2.png)
 
 ---
 
@@ -443,18 +444,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
-- [ ] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
-- [ ] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
-- [ ] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
-- [ ] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
-- [ ] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
-- [ ] All scripts run without errors
-- [ ] Full Name visible in all required screenshots
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [x] Task 1: Environment setup verified, workspace created (Screenshots 1–2, Notes answered)
+- [x] Task 2: First script created, executed, permissions verified (Screenshots 1–3, Notes answered)
+- [x] Task 3: Variables script created and run (Screenshots 1–2, Notes answered)
+- [x] Task 4: Arrays and loops script created and run (Screenshots 1–2, Notes answered)
+- [x] Task 5: Counter loop script created and run (Screenshots 1–2, Notes answered)
+- [x] Task 6: File validation script created and run (Screenshots 1–3, Notes answered)
+- [x] Task 7: Pass/Retry conditional script tested with both values (Screenshots 1–4, Notes answered)
+- [x] Task 8: Final automation script created and run (Screenshots 1–3, Notes answered)
+- [x] All scripts run without errors
+- [x] Full Name visible in all required screenshots
+- [x] LinkedIn post published and URL submitted
+- [x] No sensitive data exposed
 
 ---
 

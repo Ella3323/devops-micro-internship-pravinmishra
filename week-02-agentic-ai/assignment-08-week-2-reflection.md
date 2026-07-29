@@ -93,7 +93,7 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![alt text](screenshots/Linkedin-Post-Agentic-AI.png)
 
 ---
 
@@ -101,15 +101,57 @@ Add your screenshot here.
 
 LinkedIn Post Content (copy-paste here):
 
-```
-Paste your LinkedIn post content here
-```
+I asked one question... but my AI agent answered with memory.
+
+Yesterday, I shared a web project with my AI agent and we discussed the hero section.
+
+Today, I came back and asked a simple question:
+
+What colors are used in the hero section of this project?
+
+I expected it to scan the code and list the colors.
+
+👉Instead, the first thing it did was:
+"Recalled 1 memory."
+
+It remembered our previous discussion and answered using that context.
+
+No need to explain the project again.
+
+No need to remind it what we had already discussed.
+
+It simply continued from where we left off.
+
+That made me realize how much time we spend every day:
+
+👉Re-explaining project decisions. 
+👉Rebuilding context after every session. 👉Searching through old chats or notes.
+
+Now imagine an AI agent that remembers your project history and keeps the conversation moving forward.
+
+That's more than an AI assistant.
+
+That's an AI teammate.
+
+For me, this is one of the most exciting things about Agentic AI.
+
+It's not just about generating answers anymore.
+
+It's about remembering context and making work feel continuous instead of repetitive.
+And honestly...
+
+I think we're only scratching the surface of what's possible.
+
+P.S. This post is a part of DevOps Microy Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community (https://lnkd.in/eCJYseYp).
+
+hashtag#DMIByPravinMishra hashtag#AgenticAI hashtag#ClaudeCode hashtag#DevOps hashtag#LearningInPublic hashtag#AI hashtag#CloudComputing
+
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 ---
 
