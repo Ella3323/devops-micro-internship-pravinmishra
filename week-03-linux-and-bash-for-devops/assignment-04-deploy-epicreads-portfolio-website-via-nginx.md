@@ -139,18 +139,18 @@ https://www.linkedin.com/posts/pamela-ezeotika_devops-cloudcomputing-aws-ugcPost
 
 # Completion Checklist
 
-- [ ] Screenshot 0: Nginx service status (active/running)
-- [ ] Screenshot 1: Website files downloaded and extracted
-- [ ] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
-- [ ] Screenshot 3: Nginx configuration test successful
-- [ ] Screenshot 4: Website files deployed to /var/www/html
-- [ ] Screenshot 5: Public IP retrieved
-- [ ] Screenshot 6: Live website accessible in browser with footer details
-- [ ] Screenshot 7: Nginx enabled on boot
-- [ ] Screenshot 8: Local HTTP response returns 200 OK
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [x] Screenshot 0: Nginx service status (active/running)
+- [x] Screenshot 1: Website files downloaded and extracted
+- [x] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
+- [x] Screenshot 3: Nginx configuration test successful
+- [x] Screenshot 4: Website files deployed to /var/www/html
+- [x] Screenshot 5: Public IP retrieved
+- [x] Screenshot 6: Live website accessible in browser with footer details
+- [x] Screenshot 7: Nginx enabled on boot
+- [x] Screenshot 8: Local HTTP response returns 200 OK
+- [x] LinkedIn post published and URL submitted
+- [x] Full Name visible in all required screenshots
+- [x] No sensitive data exposed
 
 ---
 

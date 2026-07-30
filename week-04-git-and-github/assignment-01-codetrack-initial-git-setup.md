@@ -76,11 +76,11 @@ Set a global Git username and email for this machine using `git config --global`
 
 # Completion Checklist
 
-- [ ] `CodeTrack` folder created and initialized as a Git repository (Screenshots 1–2)
-- [ ] Explanation of the `.git` folder written in your own words
-- [ ] Local `user.name` and `user.email` configured and verified (Screenshot 3)
-- [ ] Global `user.name` and `user.email` configured and verified (Screenshot 4)
-- [ ] No sensitive data exposed
+- [x] `CodeTrack` folder created and initialized as a Git repository (Screenshots 1–2)
+- [x] Explanation of the `.git` folder written in your own words
+- [x] Local `user.name` and `user.email` configured and verified (Screenshot 3)
+- [x] Global `user.name` and `user.email` configured and verified (Screenshot 4)
+- [x] No sensitive data exposed
 
 ---
 
