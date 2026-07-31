@@ -49,7 +49,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-![Add your screenshot here.](screenshots/Assignment6SS2.png)
+![alt text](screenshots/Assignment6SS2.png)
 
 ---
 
@@ -211,11 +211,7 @@ https://github.com/Ella3323/devops-micro-internship-interviews/pull/1
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-<<<<<<< HEAD
-I made a few small edits to the AI's draft so it accurately described the changes I made. I also removed anything that was unclear and made the description easier to understand.
-=======
 I reviewed the AI's draft and made a few small changes to make it more accurate and match the work I actually completed. This made sure the PR description clearly explained my changes.
->>>>>>> feature/ai-pr-ready
 
 ---
 

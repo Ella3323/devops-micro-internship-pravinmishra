@@ -489,13 +489,13 @@ Verify: I reran the triage script to confirm recovery
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy-nginx-ugcPost-7483028638729379840-P3hr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/Linkedin-Post2.png)
 
 ---
 
@@ -503,7 +503,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 
 ---
 
