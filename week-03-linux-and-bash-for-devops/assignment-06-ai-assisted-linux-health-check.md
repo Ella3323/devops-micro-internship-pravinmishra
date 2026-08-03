@@ -498,6 +498,8 @@ https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy
 ![alt text](screenshots/Linkedin-Post2.png)
 
 ---
+![alt text](../week-04-git-and-github/screenshots/Assignment1SS1.png)
+
 
 # GitHub Repository URL
 
