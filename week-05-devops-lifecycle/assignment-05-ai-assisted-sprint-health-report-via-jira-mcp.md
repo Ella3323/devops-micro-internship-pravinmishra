@@ -26,7 +26,7 @@ Add your screenshot here.
 
 Why does the MCP server need your site URL and account email in addition to the token?
 
-Add your answer here
+The Jira site URL tells the MCP server which Jira instance to connect to. The account email identifies the Atlassian account being authenticated, while the API token acts as the secret credential. All three are needed so the MCP server can authenticate and access the correct Jira account.
 
 ---
 
@@ -46,7 +46,7 @@ Add your screenshot here.
 
 Compare this jira block to the github block from Week 2 Assignment 5. The GitHub server ran via npx (a Node.js package); this one runs via uvx (a Python package) — what stays exactly the same shape despite that difference, and why doesn't Claude Code care which language a given MCP server is written in?
 
-Add your answer here
+The structure stays the same because both are MCP servers. Each server has a name, a command, arguments, and environment settings. The main difference is that GitHub uses npx while Jira uses uvx. Claude Code does not need to know which programming language the server uses because MCP provides a standard way for Claude to communicate with external tools.
 
 ---
 
@@ -66,7 +66,7 @@ Add your screenshot here.
 
 Why must JIRA_API_TOKEN live in settings.local.json and never in .mcp.json?
 
-Add your answer here
+The API token is a secret credential, so it should be stored in settings.local.json, which is kept local and added to .gitignore. This helps prevent the token from being accidentally committed to GitHub or exposed to other people. The .mcp.json file only contains the server configuration and does not need to contain the secret.
 
 ---
 
@@ -100,7 +100,9 @@ Add your screenshot here.
 
 How did you confirm this was real board data and not something Claude guessed?
 
-Add your answer here
+I confirmed the data was real by asking Claude to retrieve it directly through the Jira MCP. The response returned actual Jira issue keys, summaries, statuses, assignees, story points, and priorities. I also compared the returned information with the Jira board in my browser. Claude was instructed to use only live Jira MCP data and not to generate or assume information.
+
+The MCP returned DMIWPE Sprint 1 with 4 issues and 5 story points.
 
 ---
 
@@ -124,11 +126,11 @@ Add your screenshot here.
 
 1. Which Jira MCP tools does this skill's allowed-tools list include, and which mutating tools (create issue, update issue, transition issue, add comment) does it deliberately exclude?
 
-Add your answer here
+The skill is restricted to Jira read-only tools: jira_search, jira_get_issue, jira_get_sprint, and jira_get_board, together with the Read tool. It deliberately excludes tools that could create, update, transition, or comment on Jira issues. It also does not include Write.
 
 2. Why does a Scrum Master need this restriction more than almost any other role in this course?
 
-Add your answer here
+The Scrum Master is responsible for helping the team manage and improve the Scrum process, but the AI should not make decisions or change the team's board by itself. Keeping the skill read-only means the AI can provide information and identify risks while the human Scrum Master remains responsible for deciding and making changes.
 
 ---
 
@@ -148,7 +150,12 @@ Add your screenshot here.
 
 Map this assignment to Gather → Analyze → Human Act → Verify from Week 3 Assignment 6. Which step did you perform manually in the browser, and why must that step stay human?
 
-Add your answer here
+Gather: The Jira MCP reads the live sprint information.
+Analyze: The /sprint-health skill analyzes the sprint and identifies risks.
+Human Act: I manually made the change to the Jira board in the browser.
+Verify: I ran /sprint-health again to confirm that the report reflected the new board state.
+
+The Human Act step must stay human because the Scrum Master is responsible for decisions and changes on the Jira board. The AI should report information and support decision-making, but it should not independently modify the board.
 
 ---
 
