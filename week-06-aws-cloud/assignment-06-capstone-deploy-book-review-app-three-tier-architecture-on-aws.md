@@ -34,13 +34,13 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+us-east-1 (N. Virginia)
 
 ---
 
 **Services used:**
 
-Write your answer here.
+VPC (Virtual Private Cloud) Subnets (6 total: 2 public, 4 private) Internet Gateway Route Tables (Public + Private) EC2 Instances (2: Web Tier + App Tier) Application Load Balancer (2: Public + Internal) Security Groups (5: web-alb-sg, web-sg, internal-alb-sg, app-sg, db-sg) RDS MySQL (Single-AZ) NAT Gateway 
 
 ---
 
@@ -70,25 +70,25 @@ Capture visual proof of every tier and load balancer.
 
 #### Screenshot 1 — Web Tier EC2 instance in a public subnet
 
-Add your screenshot here.
+![alt text](screenshots/Web-EC2.png)
 
 ---
 
 #### Screenshot 2 — App Tier EC2 instance in a private subnet
 
-Add your screenshot here.
+![alt text](screenshots/APP-EC2.png)
 
 ---
 
 #### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![alt text](screenshots/web-ALB.png)
 
 ---
 
 #### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![alt text](screenshots/APP-ALB.png)
 
 ---
 
@@ -126,7 +126,7 @@ Write your answer here.
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS Console (VPC, EC2, RDS, Load Balancers, Security Groups) Claude AI (architecture guidance, debugging, code fixes) Vim (config file editing on EC2) Session Manager (secure terminal access to private instances) Browser DevTools (Network tab for diagnosing API errors) Git (cloning app repository) npm (package management for Node.js/Next.js) pm2 (process management for persistent app running)
 
 ---
 
