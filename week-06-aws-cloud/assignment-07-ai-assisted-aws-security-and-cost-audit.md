@@ -23,6 +23,12 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 Add your screenshot here.
 
 ---
+Notes You Must Write (Very Important)
+1. Which resources from this week's earlier assignments did you see in the listings?
+I saw both EC2 instances from the Book Review App capstone (Book-Review-Web-EC2 and Book-Review-App-EC2, both running in us-east-1a), the RDS instance bookreview-db (available), and the S3 bucket pravin-portfolio-pamela-us-east-1
+
+2. Why must you confirm your resources exist before writing an audit script against them?
+Validating resource existence ensures AWS CLI queries (describe-, get-, list-*) target active, configured resource identifiers, API schemas, and regions. Running audit queries against nonexistent resources or unauthenticated sessions leads to empty outputs, false positives, or runtime errors.
 
 # Task 2 — Define Safety Rules in CLAUDE.md
 

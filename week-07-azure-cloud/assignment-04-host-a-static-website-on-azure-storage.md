@@ -36,7 +36,6 @@ Create Resource Group `mini-finance-rg` and a globally unique Storage Account na
 
 Upload all Mini Finance project files to the `$web` container.
 
-> No screenshot required for this task.
 
 ---
 
@@ -50,7 +49,7 @@ Open the primary endpoint URL and confirm the Mini Finance application, styling,
 
 #### Screenshot 1 — Mini Finance website running in the browser
 
-Add your screenshot here.
+![alt text](screenshots/Assignment4-SS1.png)
 
 ---
 
