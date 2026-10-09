@@ -20,7 +20,7 @@ Create a `terraform-react-azure` project directory for the Azure Terraform confi
 
 #### Screenshot 1 — File Explorer, VS Code, or terminal showing the `terraform-react-azure` project directory
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Define the resource group, virtual network/subnet, Network Security Group (SSH 2
 
 #### Screenshot 2 — VS Code showing `main.tf` with the required Azure resources, with any password or sensitive values hidden
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Run `terraform init` and confirm the working directory initializes successfully.
 
 #### Screenshot 3 — Terminal showing successful `terraform init` output
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS3.png)
 
 ---
 
@@ -62,13 +62,13 @@ Review `terraform plan`, run `terraform apply`, and record the VM's public IP.
 
 #### Screenshot 4 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS4.png)
 
 ---
 
 #### Screenshot 5 — Azure portal showing the Virtual Machine running and its public IP
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS5.png)
 
 ---
 
@@ -82,7 +82,7 @@ Establish an SSH session with the Ubuntu VM through its public IP.
 
 #### Screenshot 6 — Terminal showing a successful SSH connection to the Azure VM
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS6.png)
 
 ---
 
@@ -96,7 +96,7 @@ Update Ubuntu and install Node.js, npm, and Git.
 
 #### Screenshot 7 — Terminal showing successful installation and the `node -v` and `npm -v` output
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS7.png)
 
 ---
 
@@ -110,13 +110,13 @@ Follow the `my-react-app` repository README to clone, install, and build the app
 
 #### Screenshot 8 — Terminal showing the successful React build
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS8.png)
 
 ---
 
 #### Screenshot 9 — Terminal showing that Nginx is active and running
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS9.png)
 
 ---
 
@@ -130,7 +130,7 @@ Confirm the React application loads through the VM's public IP and navigation wo
 
 #### Screenshot 10 — Browser showing the React application with the Azure VM public IP visible in the address bar
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS10.png)
 
 ---
 
@@ -138,7 +138,15 @@ Add your screenshot here.
 
 Write a short summary of what you built and any issues you encountered and how you resolved them.
 
-Write your answer here.
+What I built
+
+I used Terraform to create an Ubuntu Linux virtual machine on Azure. Terraform created a resource group, a virtual network, a subnet, a public IP address, a network security group (allowing SSH on port 22 and HTTP on port 80), a network interface and the VM itself. I added a setup script that runs when the VM first starts. It installs Git, Node.js and Nginx, downloads the React app, builds it and serves it with Nginx. I opened the VM's public IP in a browser and the React app loaded.
+
+Issues and how I fixed them
+
+1. VM size not available: Azure showed a capacity error for the VM size in South Africa North. I checked which sizes were available in the Azure portal and changed the VM size to one that was.
+2. Setup script did not run: The script was missing #!/bin/bash on the first line, so the VM ignored it. I added that line and fixed the home folder to match my VM username.
+
 
 ---
 

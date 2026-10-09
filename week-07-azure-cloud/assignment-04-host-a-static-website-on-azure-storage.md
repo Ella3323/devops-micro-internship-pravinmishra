@@ -57,7 +57,7 @@ Open the primary endpoint URL and confirm the Mini Finance application, styling,
 
 Paste the Azure Storage static website URL here:
 
-`Add your URL here`
+https://minifinance18.z13.web.core.windows.net/
 
 ---
 

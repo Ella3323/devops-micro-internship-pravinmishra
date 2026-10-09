@@ -20,13 +20,14 @@ Define a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) and private subnet
 
 #### Screenshot 1 — Terraform configuration showing the VPC and both subnet CIDR ranges
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS5.png)
 
 ---
 
 #### Screenshot 2 — Terraform configuration showing the Internet Gateway, public route table, and both Security Groups
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS4b.png)
+![alt text](screenshots/ASSIGNMENT4-SS6.png)
 
 ---
 
@@ -40,19 +41,19 @@ Use Terraform to launch a t2.micro Ubuntu 22.04 EC2 instance in the public subne
 
 #### Screenshot 3 — Terraform apply output showing successful EC2 provisioning
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS21.png)
 
 ---
 
 #### Screenshot 4 — EC2 instance running in the AWS Console with the public IP and subnet visible
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS23.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful SSH access and installed software
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS29.png)
 
 ---
 
@@ -66,13 +67,14 @@ Deploy the EpicBook frontend and backend on the EC2 instance and configure Nginx
 
 #### Screenshot 6 — Terminal showing the EpicBook application files and dependency installation
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS4.png)
+![alt text](screenshots/ASSIGNMENT4-SS4b.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing the application and Nginx services running
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS25.png)
 
 ---
 
@@ -86,19 +88,19 @@ Provision a private Amazon RDS MySQL instance (db.t3.micro, Publicly accessible:
 
 #### Screenshot 8 — Terraform apply output showing successful RDS provisioning
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS21.png)
 
 ---
 
 #### Screenshot 9 — RDS instance in the AWS Console showing the private network configuration and Publicly accessible: No
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS24.png)
 
 ---
 
 #### Screenshot 10 — Terminal showing successful database initialization or table verification from EC2
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS27.png)
 
 ---
 
@@ -112,13 +114,13 @@ Confirm EpicBook is accessible through the EC2 public IP and that navigation, ca
 
 #### Screenshot 11 — Browser showing the EpicBook application through the EC2 public IP
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS31.png)
 
 ---
 
 #### Screenshot 12 — Browser showing a working product, cart, order summary, or checkout flow
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS31.png)
 
 ---
 
