@@ -94,13 +94,13 @@ Capture visual proof of every tier and load balancer.
 
 #### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
 
-Add your screenshot here.
+![alt text](screenshots/Replica.png)
 
 ---
 
 #### Screenshot 6 — Book Review App UI working through the public ALB
 
-Add your screenshot here.
+![alt text](screenshots/Book-review1.png)
 
 ---
 
@@ -114,13 +114,39 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+Successfully architected and deployed a highly available, multi-tier AWS infrastructure across multiple Availability Zones (us-east-1a and us-east-1b).
+
+Integrated an Internet-facing Application Load Balancer (book-review-webAlb) routing to Web EC2 instances running Next.js and Nginx.
+
+Configured Nginx as a reverse proxy passing internal API traffic over an Internal ALB (Book-Review-App-ALB) to Express backend instances on Port 3001.
+
+Connected the Express application tier to a Multi-AZ Amazon RDS instance with Read Replica fault tolerance.
+
+Validated end-to-end functionality including homepage book rendering, user registration, authentication, detail page routing, and review submission.
 
 ---
 
 **Issues encountered and fixes:**
 
-Write your answer here.
+Path Duplication (404 Not Found on /api/api/books):
+
+Issue: Client-side JavaScript requests duplicated the API path when passing through Nginx.
+
+Fix: Updated Nginx reverse proxy configuration in /etc/nginx/sites-available/book-review under location /api/ by adding a trailing slash to the proxy_pass http:/// directive to automatically strip duplicate prefixes.
+
+Public ALB 503 Service Temporarily Unavailable:
+
+Issue: The Internet-facing ALB had no healthy target instances registered in its Target Group.
+
+Fix: Registered the Web EC2 instance (10.0.1.111) under port 80 within Book-Review-Web-TG, adjusted Security Group rules to allow HTTP port 80 ingress from the public ALB, and verified health check passing on path /.
+
+Inability to access Internal ALB directly from browser:
+
+Issue: Attempting to access internal-Book-Review-App-ALB... directly from a local browser timed out (ERR_CONNECTION_TIMED_OUT).
+
+Fix: Confirmed by design that internal ALBs reside exclusively within private VPC subnets and routed public internet access through the Internet-facing ALB entry point.
+
+
 
 ---
 

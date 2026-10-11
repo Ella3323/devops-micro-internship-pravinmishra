@@ -135,10 +135,10 @@ Week 02 → Agentic AI with Claude Code
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Completed |https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-activity-7481442780196569088-ZyQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/reflection-week-2-learning-how-ai-can-do-more-than-answer-questions-by-pamela-chidinma-ezeotika-adadc001aa32 |
 | 03 | Linux & Bash for DevOps | 🔄 ✅ Completed |✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_configvalidation-testbeforedeploy-nginx-ugcPost-7483028638729379840-P3hr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/how-i-built-an-ai-assisted-linux-incident-triage-workflow-with-bash-and-claude-code-762dce4253ec |
 | 04 | Git & GitHub | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/pamela-ezeotika_devops-github-opensource-ugcPost-7485928394329677824-Qs8S/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E | https://medium.com/@ezeotikapamela/how-i-built-an-ai-assisted-linux-incident-triage-workflow-with-bash-and-claude-code-762dce4253ec |
-| 05 | DevOps Lifecycle & Agile | 🔄 In Progress | ⏳ Pending | — | — |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Completed | — | — |
+| 06 | AWS Cloud | ✅ Completed | ✅ Completed | — | — |
+| 07 | Azure Cloud | 🔄 In Progress| ⏳ Pending | — | — |
+| 08 | Terraform | 🔄 In Progress | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |

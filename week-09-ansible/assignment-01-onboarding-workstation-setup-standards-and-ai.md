@@ -20,13 +20,13 @@ Create and activate an isolated `.venv` inside `ansible-onboarding/`, install `a
 
 #### Screenshot 1 — Terminal showing the activated `.venv` and successful `ansible --version` output
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS1.png)
 
 ---
 
 #### Screenshot 2 — Terminal showing successful `ansible-lint --version` output and `requirements.txt`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS2.png)
 
 ---
 
@@ -40,14 +40,13 @@ Install the Ansible, YAML, and Python VS Code extensions, and create `.vscode/se
 
 #### Screenshot 3 — VS Code Extensions panel showing Ansible, YAML, and Python installed
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS3.png)
 
 ---
 
 #### Screenshot 4 — VS Code showing `.vscode/settings.json` and `.editorconfig`
 
-Add your screenshot here.
-
+![alt text](screenshots/ASSIGNMENT1-SS4.png)
 ---
 
 # Task 3 — Baseline ansible.cfg (Team-Friendly Defaults)
@@ -60,7 +59,7 @@ Create `ansible.cfg` in the project root with the team-friendly defaults and SSH
 
 #### Screenshot 5 — VS Code or terminal showing `ansible.cfg` in the project root with the supplied settings
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS5.png)
 
 ---
 
@@ -74,7 +73,7 @@ Generate or use an Ed25519 SSH key, load it into `ssh-agent`, and configure `~/.
 
 #### Screenshot 6 — Terminal showing `ssh-add -l` with the key loaded (do not expose private-key contents)
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS6.png)
 
 ---
 
@@ -88,13 +87,13 @@ Configure Git identity and the `main` default branch, install `pre-commit`, add 
 
 #### Screenshot 7 — Terminal showing `pre-commit install` output
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS7.png)
 
 ---
 
 #### Screenshot 8 — Terminal showing `pre-commit run --all-files` passing
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS8.png)
 
 ---
 
@@ -108,14 +107,14 @@ Document the workstation setup in `README.md`, including a "New Machine? Do This
 
 #### Screenshot 9 — Repository tree showing the required files
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS9.png)
 
 ---
 
 #### Screenshot 10 — `README.md` showing machine details and the "New Machine? Do This" checklist
 
-Add your screenshot here.
-
+![alt text](screenshots/ASSIGNMENT1-SS910A.png)
+![alt text](screenshots/ASSIGNMENT1-SS910B.png)
 ---
 
 ### Notes
@@ -135,7 +134,7 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Isolated environment created, Ansible and lint tools installed (Screenshots 1–2)
+- [] Task 1: Isolated environment created, Ansible and lint tools installed (Screenshots 1–2)
 - [ ] Task 2: VS Code extensions and workspace settings configured (Screenshots 3–4)
 - [ ] Task 3: `ansible.cfg` created with team defaults (Screenshot 5)
 - [ ] Task 4: SSH key generated and loaded into agent (Screenshot 6)

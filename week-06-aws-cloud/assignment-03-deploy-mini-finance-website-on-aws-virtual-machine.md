@@ -58,7 +58,7 @@ Start the web server and confirm the Mini Finance website is accessible through 
 
 Paste the public IP address of your EC2 instance here (e.g. `http://3.91.105.10`):
 
-`Add your URL here`
+http://13.212.33.24
 
 ---
 
