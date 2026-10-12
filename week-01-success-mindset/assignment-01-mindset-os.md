@@ -1,16 +1,16 @@
 # Week 01 — Success Mindset (Mindset OS)
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 
 
-## Purpose (Read This First)
+## Task 1 — A Belief You Hold
 
-This week is not motivation homework.
+### Question
 
-This is you building your **Mindset OS** — the system you will use for the next 5 months (and honestly, for years).
+What is something you believe to be true that most people around you would disagree with?
 
-### Expectations
+Write at least **50 words**. Be honest, specific, and use clear professional sentences.
 
 * Be honest.
 * Be specific.
@@ -37,9 +37,9 @@ One belief I hold that many people around me may disagree with is that consisten
 
 
 
-# Assignment 2. What are the top 3 objective truths you discovered through experimentation and results?
+## Task 2 — Three Objective Truths Discovered Through Experimentation
 
-### Definition
+Write three objective truths you discovered through your own actions and results. For each truth, include one sentence for the truth and two to four lines of evidence from your life.
 
 
 
@@ -50,27 +50,106 @@ One belief I hold that many people around me may disagree with is that consisten
 
 Consistency beats motivation.
 
-### Evidence from my life
+**Evidence from My Life**
+
+Add your answer here...
+
+### Truth #2
+
+**Truth**
+
+Add your answer here...
+
+**Evidence from My Life**
+
+Add your answer here...
+
+### Truth #3
+
+**Truth**
+
+Add your answer here...
+
+**Evidence from My Life**
 
 I committed to a 30-day LinkedIn posting challenge. Some days I didn't feel like posting, but I did it anyway. The days I showed up without motivation are the ones that built the habit.
 
 
 
-## Truth #2
+## Task 3 — What Does Your 2.0 Version Look Like?
 
-### Truth
+Write and publicly publish an article about your future professional self, written as if a journalist is writing about you **3–7 years from now**.
+
+Your article must:
+
+* Be at least **300 words**.
+* Be written in the **past tense**, as if it has already happened.
+* Include specific proof such as projects, portfolio, GitHub, blogs, certifications, job role, leadership, or community contribution.
+* Be published on LinkedIn, Medium, WordPress, Blogspot, a personal blog, or a portfolio page.
+
+### My Article
+
+Paste your complete article here...
+
+### Public Article URL
+
+```text
+Paste your published article URL here...
+```
+
+### LinkedIn Post URL
+
+Create a LinkedIn post sharing your published article, then add the URL below.
+
+```text
+Paste your LinkedIn post URL here...
+```
+
+### Credit Note — DMI Self-Paced Engineer Track Students
+
+Add this credit note at the end of your public article. Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username.
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) — Self-Paced Engineer Track — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public:** https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html **· Start your DevOps journey:** https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=self-paced
+
+`#DMIByPravinMishra`
+
+Tag [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) in your LinkedIn post.
+
+### Credit Note — DMI Campus Students
+
+Add this credit note at the end of your public article. Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username.
+
+> **P.S. This post is part of the DevOps Micro Internship (DMI) — Campus — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public:** https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html **· Start your DevOps journey:** https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=campus
+
+`#DMIByPravinMishra`
+
+Tag [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) and Lead Co-Mentor [Anjana Muthunayake](https://www.linkedin.com/in/anjana-muthunayake/) in your LinkedIn post.
+
+---
+
+## Task 4 — Reflection on Cutting Corners
+
+### Question
+
+Have you ever cut corners through unethical, dishonest, or shortcut behaviour (not necessarily illegal)? If yes, how did it make you feel?
+
+You do not need to tell the full story. Focus on the emotions you experienced. If your answer is yes, write **50–100 words**.
+
+### Your Answer
+
+**Yes / No:**
 
 You learn faster by breaking things than by reading about them.
 
-### Evidence from my life
+**Reflection:**
 
 I deploy a bank app project that kept breaking, YAML errors, Terraform locks, runner registration failing. Every failure taught me more than any tutorial. I understand my pipeline now because I fixed it myself.
 
 
 
-## Truth #3
+## Task 5 — Your One-Year Non-Fiction Reading Plan
 
-### Truth
+List **10 non-fiction books** you plan to read during the next year. Include the title and author of each book. Books in any language are allowed.
 
 Asking for help is faster than struggling alone.
 
@@ -80,9 +159,9 @@ When I got stuck on my self-hosted runner setup, trying to figure it out solo wa
 
 
 
-# Assignment 3. What does your 2.0 version look like?
+## Task 6 — Your Life and Career Metrics
 
-### Instructions
+List the things you will measure regularly in your life and career. You only need to list the metric topics; do not include personal numbers.
 
 
 
@@ -221,21 +300,17 @@ List topics only. No need to share numbers.
 
 
 
-# Assignment 7. Brain Dump + 5-Month System Plan
+## Task 7 — Brain Dump and Three-Month System Plan
 
-## Step 1: Brain Dump (Private)
+### Step 1 — Brain Dump (Private)
 
-Do a brain dump of everything in your mind into a notebook.
+Do a private brain dump in a notebook, notes app, or document. Include everything currently on your mind, such as tasks, bills, worries, goals, pending messages, ideas, and responsibilities.
 
-Examples:
+**Did you create a brain dump?**
 
-* Bills
-* Tasks
-* Worries
-* Goals
-* Pending messages
-* Ideas
-* Responsibilities
+```text
+Yes / No
+```
 
 ### Did You Do It?
 
@@ -276,7 +351,7 @@ Sunday: Church, Weekly review
 Monday: 1PM - 4PM
 Tuesday - Friday 7pm -9pm
 
-#### How Many Sessions Per Week?
+#### How Many DMI Work Sessions Will I Complete Each Week?
 
 4-6 Sessions
 
@@ -300,17 +375,17 @@ Take short breaks only after completing a study block.
 
 
 
-# Reflection – Week 1
+## Task 8 — Week 1 Reflection and Proof of Work
 
-### Biggest insight I got about myself this week
+### Biggest Insight I Got About Myself This Week
 
 I realized that I am capable of learning difficult things when I stay consistent and patient with myself. I also noticed that progress does not always have to be fast; small daily improvements matter. What matters most is showing up and putting in the work every day.
 
-### My biggest weakness/loop I noticed
+### My Biggest Weakness or Loop I Noticed
 
 One weakness I noticed is overthinking and sometimes doubting myself when things feel difficult. This can lead to procrastination and slow down my progress. I also noticed that distractions, especially from my phone, affect my focus more than I thought.
 
-### One system I will implement from this week (exact habit + time)
+### One System I Will Implement From This Week (Exact Habit and Time)
 
 I will study consistently from 7:00 PM – 9:00 PM, Monday to Friday, with my phone away from me.
 I will use the Pomodoro technique (50 minutes focus + 10 minutes break) to stay productive and maintain concentration.
@@ -347,10 +422,11 @@ Happy Friday and have a lovely weekend everyone 💕🚀
 
 
 
-## 10. Proof of Work
+## Completion Checklist
 
 - LinkedIn Post URL: **https://www.linkedin.com/posts/pamela-ezeotika_its-friday-week-1-of-dmi-cohort-3-agentic-activity-7478702825561317376-PTq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E**  
 - Blog / Medium : https://medium.com/@ezeotikapamela/pamela-ezeotika-2-0-2030-building-a-career-one-step-at-a-time-676c1bef421d 
+
 
 
 
@@ -373,4 +449,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track*

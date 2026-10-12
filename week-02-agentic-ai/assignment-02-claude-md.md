@@ -1,6 +1,6 @@
 # Assignment 2 — Teaching Claude Your Project
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -87,6 +87,20 @@ Commit the `CLAUDE.md` file and push it to your GitHub fork so the project instr
 
 ---
 
+# Task 6 — Share Your Progress on WhatsApp
+
+## Goal
+
+Celebrate your progress and share your DMI Leaderboard achievement on WhatsApp.
+
+### Evidence
+
+#### Screenshot 7 — Your shared WhatsApp Status or community message showing the automatically generated leaderboard rank and personal progress link
+
+Add your screenshot here.
+
+---
+
 # Submission Instructions
 
 - Ensure `CLAUDE.md` is committed to your GitHub repository
@@ -134,4 +148,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI)— Agentic AI Track.*

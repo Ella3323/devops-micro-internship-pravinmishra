@@ -1,6 +1,6 @@
 # Assignment 4 — Deploy EpicReads Portfolio Website via Nginx
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -139,7 +139,7 @@ https://www.linkedin.com/posts/pamela-ezeotika_devops-cloudcomputing-aws-ugcPost
 
 # Completion Checklist
 
-- [x] Screenshot 0: Nginx service status (active/running)
+- [] Screenshot 0: Nginx service status (active/running)
 - [x] Screenshot 1: Website files downloaded and extracted
 - [x] Screenshot 2: Footer updated with Full Name, Group, Week, and Date
 - [x] Screenshot 3: Nginx configuration test successful
@@ -174,4 +174,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
