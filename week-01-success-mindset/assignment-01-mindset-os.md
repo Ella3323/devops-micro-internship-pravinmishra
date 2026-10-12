@@ -12,6 +12,7 @@ What is something you believe to be true that most people around you would disag
 
 Write at least **50 words**. Be honest, specific, and use clear professional sentences.
 
+<<<<<<< HEAD
 * Be honest.
 * Be specific.
 * Be practical.
@@ -32,6 +33,9 @@ You will reuse this in later weeks. So do it properly once.
 **Hint:** What do you believe about career, money, learning, discipline, relationships, health, success, life, tech industry, etc. that most people don't agree with?
 
 ## Answer
+=======
+### Your Answer
+>>>>>>> upstream/main
 
 One belief I hold that many people around me may disagree with is that consistency matters more than motivation. I believe motivation comes and goes because feelings can change daily, but consistency is what produces real results over time. Even on days when I don’t feel motivated, showing up and doing the work still moves me forward. To me, long-term success is built through small, consistent efforts repeated daily, not just moments of excitement or inspiration.
 
@@ -41,12 +45,18 @@ One belief I hold that many people around me may disagree with is that consisten
 
 Write three objective truths you discovered through your own actions and results. For each truth, include one sentence for the truth and two to four lines of evidence from your life.
 
+<<<<<<< HEAD
 
 
 
 ## Truth #1
 
 ### Truth
+=======
+### Truth #1
+
+**Truth**
+>>>>>>> upstream/main
 
 Consistency beats motivation.
 
@@ -151,18 +161,32 @@ I deploy a bank app project that kept breaking, YAML errors, Terraform locks, ru
 
 List **10 non-fiction books** you plan to read during the next year. Include the title and author of each book. Books in any language are allowed.
 
+<<<<<<< HEAD
 Asking for help is faster than struggling alone.
 
 ### Evidence from my life
 
 When I got stuck on my self-hosted runner setup, trying to figure it out solo wasted hours. Reaching out to my mentors or the community solved it in minutes.
 
+=======
+1. Add book title and author here...
+2. Add book title and author here...
+3. Add book title and author here...
+4. Add book title and author here...
+5. Add book title and author here...
+6. Add book title and author here...
+7. Add book title and author here...
+8. Add book title and author here...
+9. Add book title and author here...
+10. Add book title and author here...
+>>>>>>> upstream/main
 
 
 ## Task 6 — Your Life and Career Metrics
 
 List the things you will measure regularly in your life and career. You only need to list the metric topics; do not include personal numbers.
 
+<<<<<<< HEAD
 
 
 **Minimum 300 words.**
@@ -281,6 +305,11 @@ List topics only. No need to share numbers.
 * Spending tracker
 
 ## My Metrics
+=======
+Your list must include learning or skills, output or proof, health or energy, time or focus, and money or finance.
+
+### My Metrics
+>>>>>>> upstream/main
 
 * Learning hours per week
 * Complete a lab project each week
@@ -312,6 +341,7 @@ Do a private brain dump in a notebook, notes app, or document. Include everythin
 Yes / No
 ```
 
+<<<<<<< HEAD
 ### Did You Do It?
 
 **Yes / No**
@@ -334,6 +364,9 @@ Example:
 * Mon–Thu: 60 min deep work
 * Sat: DMI session
 * Sun: Weekly review
+=======
+### Step 2 — My Three-Month Routine and Focus Blocks
+>>>>>>> upstream/main
 
 #### My Weekly Routine
 
@@ -343,10 +376,14 @@ Saturday: DMI Session
 Sunday: Church, Weekly review
 
 
+<<<<<<< HEAD
 
 ### Focus Blocks
 
 #### When Will You Do DMI Work? (Days + Time)
+=======
+#### When Will I Complete My DMI Work? (Include Days and Time)
+>>>>>>> upstream/main
 
 Monday: 1PM - 4PM
 Tuesday - Friday 7pm -9pm
@@ -356,6 +393,7 @@ Tuesday - Friday 7pm -9pm
 4-6 Sessions
 
 
+<<<<<<< HEAD
 
 ### Distraction Rules
 
@@ -373,6 +411,14 @@ Use a quiet and clean workspace for learning.
 Focus on one task at a time and avoid multitasking.
 Take short breaks only after completing a study block.
 
+=======
+#### My Distraction Rules
+
+* Add your answer here...
+* Add your answer here...
+* Add your answer here...
+* Add your answer here...
+>>>>>>> upstream/main
 
 
 ## Task 8 — Week 1 Reflection and Proof of Work
@@ -390,6 +436,7 @@ One weakness I noticed is overthinking and sometimes doubting myself when things
 I will study consistently from 7:00 PM – 9:00 PM, Monday to Friday, with my phone away from me.
 I will use the Pomodoro technique (50 minutes focus + 10 minutes break) to stay productive and maintain concentration.
 
+<<<<<<< HEAD
 ### LinkedIn Post
 It’s Friday 💕
 
@@ -420,12 +467,45 @@ Happy Friday and have a lovely weekend everyone 💕🚀
 
 
 
+=======
+### Proof of Work
+
+**LinkedIn Post URL**
+
+```text
+Paste your LinkedIn post URL here...
+```
+
+**Blog / Medium / Public Article URL**
+
+```text
+Paste your published article URL here...
+```
+>>>>>>> upstream/main
 
 
 ## Completion Checklist
 
+<<<<<<< HEAD
 - LinkedIn Post URL: **https://www.linkedin.com/posts/pamela-ezeotika_its-friday-week-1-of-dmi-cohort-3-agentic-activity-7478702825561317376-PTq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E**  
 - Blog / Medium : https://medium.com/@ezeotikapamela/pamela-ezeotika-2-0-2030-building-a-career-one-step-at-a-time-676c1bef421d 
+
+=======
+* [ ] All eight tasks are completed.
+* [ ] All written answers are honest, specific, and written in clear professional sentences.
+* [ ] Task 1 has at least 50 words.
+* [ ] Task 2 includes all three truths and evidence from my life.
+* [ ] Task 3 includes a 300+ word article written in past tense.
+* [ ] My Task 3 article is published on an approved public platform.
+* [ ] I added the correct DMI credit note and replaced `YOUR-GITHUB-USERNAME`.
+* [ ] I published a LinkedIn post sharing my Task 3 article.
+* [ ] Task 5 has 10 non-fiction books with titles and authors.
+* [ ] Task 6 includes learning, output, health, time, and finance metrics.
+* [ ] I completed the private brain dump for Task 7.
+* [ ] I added a realistic three-month routine, DMI focus blocks, and distraction rules.
+* [ ] I completed the Week 1 reflection.
+* [ ] I added both the LinkedIn post and public article URLs under Task 8.
+>>>>>>> upstream/main
 
 
 

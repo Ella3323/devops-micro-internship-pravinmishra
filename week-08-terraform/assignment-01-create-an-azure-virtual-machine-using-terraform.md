@@ -132,7 +132,6 @@ Remove all Azure resources created by Terraform after completing the deployment 
 
 ## Goal
 
-
 ---
 
 # Submission Instructions

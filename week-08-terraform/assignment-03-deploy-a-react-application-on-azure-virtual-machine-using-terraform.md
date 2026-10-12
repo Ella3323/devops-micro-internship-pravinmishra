@@ -224,6 +224,7 @@ Add a screenshot of the terminal showing successful `terraform destroy` completi
 
 ---
 
+<<<<<<< HEAD
 #### Screenshot 9 — Terminal showing that Nginx is active and running
 
 ![alt text](screenshots/ASSIGNMENT3-SS9.png)
@@ -231,6 +232,9 @@ Add a screenshot of the terminal showing successful `terraform destroy` completi
 ---
 
 # Task 8 — Test the Deployment
+=======
+# Task 7 — Share Your Deployment Progress on LinkedIn
+>>>>>>> upstream/main
 
 ## Goal
 

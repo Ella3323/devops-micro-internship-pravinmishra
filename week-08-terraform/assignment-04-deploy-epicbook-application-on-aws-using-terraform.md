@@ -16,6 +16,7 @@ You will use EC2 `user_data` to install the required software, initialize the Ep
 
 ## Goal
 
+<<<<<<< HEAD
 Define a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) and private subnet (10.0.2.0/24), an Internet Gateway with public routing, an EC2 Security Group (SSH 22, HTTP 80), and an RDS Security Group (MySQL 3306 only from the EC2 Security Group).
 
 ### Evidence
@@ -139,6 +140,9 @@ Write your answer here.
 ## Goal
 
 Publish a LinkedIn post about what you achieved in this assignment, with public or "Anyone" visibility.
+=======
+Prepare your local environment by installing Terraform, AWS CLI, and the HashiCorp Terraform extension in VS Code, configuring AWS CLI, and confirming that all required tools are working correctly.
+>>>>>>> upstream/main
 
 ## Evidence
 

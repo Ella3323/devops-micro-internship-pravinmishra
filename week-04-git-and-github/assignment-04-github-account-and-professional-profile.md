@@ -102,6 +102,7 @@ Paste your GitHub profile URL here:
 
 # Completion Checklist
 
+<<<<<<< HEAD
 - [x] GitHub account created or existing account confirmed (Screenshot 1)
 - [x] Trending repositories explored (Screenshot 3)
 - [x] At least one repository starred (Screenshot 4)
@@ -109,6 +110,16 @@ Paste your GitHub profile URL here:
 - [x] Professional bio added to your GitHub profile (Screenshot 6)
 - [x] GitHub profile URL included
 - [x] No passwords, codes, or authentication secrets exposed
+=======
+- [ ] GitHub account created or existing account confirmed (Screenshot 1)
+- [ ] Trending repositories explored (Screenshot 3)
+- [ ] At least one repository starred (Screenshot 4)
+- [ ] At least one public repository forked (Screenshot 5)
+- [ ] Professional bio added to your GitHub profile (Screenshot 6)
+- [ ] GitHub profile URL included
+- [ ] WhatsApp Status shared for Task 4
+- [ ] No passwords, codes, or authentication secrets exposed
+>>>>>>> upstream/main
 
 ---
 
