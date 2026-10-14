@@ -641,15 +641,15 @@ Add your answer here.
 Confirm that the following files are included in your GitHub repository or assignment folder:
 
 - [x] `README.md`
-- [ ] Terraform files under either `terraform/azure/` or `terraform/aws/`
-- [ ] `ansible/ansible.cfg`
-- [ ] `ansible/inventory.ini`
-- [ ] `ansible/site.yml`
-- [ ] `ansible/group_vars/web.yml`
-- [ ] `ansible/roles/common/tasks/main.yml`
-- [ ] `ansible/roles/nginx/tasks/main.yml`
-- [ ] `ansible/roles/nginx/templates/epicbook.conf.j2`
-- [ ] `ansible/roles/epicbook/tasks/main.yml`
+- [x] Terraform files under either `terraform/azure/` or `terraform/aws/`
+- [x] `ansible/ansible.cfg`
+- [x] `ansible/inventory.ini`
+- [x] `ansible/site.yml`
+- [x] `ansible/group_vars/web.yml`
+- [x] `ansible/roles/common/tasks/main.yml`
+- [x] `ansible/roles/nginx/tasks/main.yml`
+- [x] `ansible/roles/nginx/templates/epicbook.conf.j2`
+- [x] `ansible/roles/epicbook/tasks/main.yml`
 
 ---
 

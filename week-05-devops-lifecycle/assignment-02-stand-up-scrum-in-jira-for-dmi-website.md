@@ -154,11 +154,11 @@ Locate the Burndown Chart for Sprint 1 so it is ready for later progress trackin
 
 Paste your LinkedIn post URL here:
 
-Add your URL here...
+https://lnkd.in/p/eRQsCgmv
 
 #### Screenshot 13 — LinkedIn Post Showing Your Scrum Project Setup and DMI Leaderboard Progress Link
 
-Add your screenshot here.
+![alt text](screenshots/Linkedin-post1.png).
 
 ---
 
@@ -171,7 +171,6 @@ Add your screenshot here.
 
 # Completion Checklist
 
-<<<<<<< HEAD
 - [x] Task 1: Private team-managed Scrum Space created with your name (Screenshot 1)
 - [x] Task 2: Epic "Polish DMI Website UI & Deploy" created (Screenshot 2)
 - [x] Task 3: All six Stories connected to the Epic, assigned to you, with descriptions/acceptance criteria/points/labels (Screenshots 3 & 4)
@@ -182,19 +181,6 @@ Add your screenshot here.
 - [x] Task 8: Burndown Chart opened for Sprint 1 (Screenshot 12)
 - [x] Full Name visible in required screenshots
 - [x] No sensitive data exposed
-=======
-- [ ] Task 1: Private team-managed Scrum Space created with your name (Screenshot 1)
-- [ ] Task 2: Epic "Polish DMI Website UI & Deploy" created (Screenshot 2)
-- [ ] Task 3: All six Stories connected to the Epic, assigned to you, with descriptions/acceptance criteria/points/labels (Screenshots 3 & 4)
-- [ ] Task 4: Four Sub-tasks created under both S2 and S4 (Screenshots 5 & 6)
-- [ ] Task 5: Frontend and devops labels applied to all Stories (Screenshot 7)
-- [ ] Task 6: One-week Sprint 1 started with the required Sprint Goal (Screenshots 8 & 9)
-- [ ] Task 7: Frontend and devops filters demonstrated (Screenshots 10 & 11)
-- [ ] Task 8: Burndown Chart opened for Sprint 1 (Screenshot 12)
-- [ ] LinkedIn post published
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
->>>>>>> upstream/main
 
 ---
 

@@ -54,7 +54,17 @@ Add your screenshot here.
 
 ### Notes
 
-Add your task notes here.
+NSG and NIC Association in Terraform Task Objective: Associate the Network Security Group (nsg-mini-finance) with the Network Interface (nic-mini-finance) using Terraform to enforce security rules at the interface level.
+
+Terraform Resource Implementation:
+
+Terraform resource "aws_network_interface_security_group_association" "nic_nsg_assoc" { network_interface_id = aws_network_interface.nic_mini_finance.id security_group_id = aws_security_group.nsg_mini_finance.id } Key Configuration Details:
+
+Network Interface ID: References the unique identifier of the target NIC resource (aws_network_interface.nic_mini_finance.id).
+
+Security Group ID: References the identifier of the configured security group (aws_security_group.nsg_mini_finance.id).
+
+Outcome: Successfully binds the inbound and outbound firewall rules defined in the security group directly to the VM's network interface.
 
 ---
 
@@ -80,7 +90,9 @@ Add your screenshot here.
 
 ### Notes
 
-Add your task notes here.
+Challenge: During terraform apply, Terraform created the EC2 instance but failed to attach the Elastic IP to its network interface. AWS returned an IncorrectInstanceState error, because the instance was still in the pending state when Terraform tried to attach the address. The rest of the infrastructure had been created successfully.
+
+Solution: I re-ran terraform apply. Terraform kept everything that already existed and retried only the Elastic IP. By then the instance was running, so the attachment succeeded. To prevent this timing issue, I could also add aws_instance.vm to the Elastic IP’s depends_on, so the address is only attached after the instance exists.
 
 ---
 
@@ -122,9 +134,15 @@ Add your screenshot here.
 
 Copy and paste the complete contents of your `ansible/inventory.ini` file below:
 
-```ini
-Add your inventory.ini content here.
-```
+[web]
+52.54.96.225
+
+[web:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/.ssh/id_ed25519
+
+
+
 
 ---
 

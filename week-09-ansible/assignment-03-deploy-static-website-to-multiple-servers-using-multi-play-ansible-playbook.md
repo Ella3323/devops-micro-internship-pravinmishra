@@ -8,8 +8,8 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 **Full Name:** Add your full name here  
 **Cloud Platform Used:** AWS / Azure  
-**Server 1 URL:** `http://<SERVER_1_PUBLIC_IP>`  
-**Server 2 URL:** `http://<SERVER_2_PUBLIC_IP>`
+**Server 1 URL:** `http://3.235.151.220`  
+**Server 2 URL:** `http://100.27.6.45`
 
 ---
 
@@ -53,9 +53,15 @@ Add your screenshot here.
 
 Copy and paste the complete contents of your `inventory.ini` file below:
 
-```ini
-Add your inventory.ini content here.
-```
+[web]
+web1 ansible_host=3.235.151.220
+web2 ansible_host=100.27.6.45
+
+[web:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/admn/.ssh/id_ed25519
+
+
 
 ---
 
@@ -98,7 +104,64 @@ Create a single Ansible playbook containing separate plays for installation, dep
 Copy and paste the complete contents of your `site.yml` file below:
 
 ```yaml
-Add your site.yml content here.
+---
+- name: Install and configure Nginx
+  hosts: web
+  become: true
+  tasks:
+    - name: Update the APT package cache
+      ansible.builtin.apt:
+        update_cache: true
+
+    - name: Install Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+
+    - name: Start and enable Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+
+- name: Deploy the static website
+  hosts: web
+  become: true
+  tasks:
+    - name: Copy index.html to the web root
+      ansible.builtin.copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: "0644"
+      notify: Reload nginx
+
+  handlers:
+    - name: Reload nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
+
+- name: Verify both websites from the controller
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  become: false
+  tasks:
+    - name: Send an HTTP GET request to each web server
+      ansible.builtin.uri:
+        url: "http://{{ hostvars[item].ansible_host }}"
+        status_code: 200
+      loop: "{{ groups['web'] }}"
+      register: website_checks
+
+    - name: Confirm each server returned HTTP 200
+      ansible.builtin.assert:
+        that:
+          - item.status == 200
+        success_msg: "{{ item.item }} returned HTTP {{ item.status }}"
+      loop: "{{ website_checks.results }}"
 ```
 
 ---
@@ -182,8 +245,8 @@ Add your screenshot here.
 Add both deployed website URLs below:
 
 ```text
-Server 1: http://<SERVER_1_PUBLIC_IP>
-Server 2: http://<SERVER_2_PUBLIC_IP>
+Server 1: http://http://3.235.151.220
+Server 2: http://http://100.27.6.45
 ```
 
 ---
@@ -198,8 +261,39 @@ Document how the project works and record what you learned.
 
 Copy and paste the complete contents of your `README.md` file below:
 
-```markdown
-Add your README.md content here.
+
+# Multi-Play Ansible Static Website Deployment
+
+## Project Overview
+
+(1-2 sentences: what you deployed, to how many servers, and with what tool.)
+
+## Environment
+
+- Cloud platform:
+- Operating system:
+- Number of managed servers:
+- Web server:
+
+## How to Run the Playbook
+
+(The exact command you used.)
+
+## Issue Faced and Solution
+
+(One real problem you hit, and how you fixed it.)
+
+## What I Learned
+
+(2-4 sentences about what this assignment taught you.)
+
+## Why Installation and Deployment Are Separate
+
+(Why Nginx installation and website deployment are in separate plays.)
+
+## Benefit of the Ansible Copy Module
+
+(One benefit of `copy` versus cloning from Git on every server.)
 ```
 
 ---

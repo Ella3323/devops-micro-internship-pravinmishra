@@ -29,14 +29,16 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 ---
 Notes You Must Write (Very Important)
 1. Which resources from this week's earlier assignments did you see in the listings?
+
 I saw both EC2 instances from the Book Review App capstone (Book-Review-Web-EC2 and Book-Review-App-EC2, both running in us-east-1a), the RDS instance bookreview-db (available), and the S3 bucket pravin-portfolio-pamela-us-east-1
 
 2. Why must you confirm your resources exist before writing an audit script against them?
+
 Validating resource existence ensures AWS CLI queries (describe-, get-, list-*) target active, configured resource identifiers, API schemas, and regions. Running audit queries against nonexistent resources or unauthenticated sessions leads to empty outputs, false positives, or runtime errors.
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment7-SS2.png)
 
 ---
 
@@ -44,11 +46,11 @@ Add your screenshot here.
 
 **1. Which resources from this week's earlier assignments did you see in the listings?**
 
-Write your answer here.
+I confirmed that AWS CLI could see resources created during my earlier Week 6 assignments, including my S3 static website bucket, EC2 instances, and Amazon RDS database. For the Book Review capstone, the EC2 resources included instances used for the Web and App tiers, while the RDS listing confirmed the MySQL database used by the application.
 
 **2. Why must you confirm your resources exist before writing an audit script against them?**
 
-Write your answer here.
+I must confirm that the AWS resources exist and that my CLI can access them before writing the audit script because the script depends on querying real resources from my AWS account. This also verifies that my AWS authentication, Region, and permissions are correct. Without this validation, an empty or failed audit could be mistaken for a secure environment when the script may simply be querying the wrong Region, account, or unavailable resources.
 
 ---
 
@@ -62,7 +64,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude the audit script is rea
 
 #### Screenshot 3 — `CLAUDE.md` open in VS Code showing all four sections
 
-![alt text](screenshots/Assignment7-SS2.png)
+![alt text](screenshots/Assignment7-SS3.png)
 
 ---
 
@@ -70,11 +72,13 @@ Create a `CLAUDE.md` in your workspace that tells Claude the audit script is rea
 
 **1. Why should Claude never be given permission to run `revoke-security-group-ingress` itself, even if the fix is obviously correct?**
 
-Write your answer here.
+Claude should never be permitted to run revoke-security-group-ingress automatically because it is a state-changing AWS command. Removing an ingress rule without human review could disrupt legitimate access to a resource or cause an outage. The audit should identify the risk and recommend remediation, while the final decision and execution remain under human control.
 
 **2. Which rule prevents Claude from claiming a finding that the report does not support?**
 
-Write your answer here.
+The Evidence and Reporting Rules prevent Claude from claiming unsupported findings. Claude must only report findings supported by the audit command output. If evidence is unavailable or incomplete, it must report that the check could not be completed rather than assuming the resource is secure or insecure.
+
+
 
 ---
 
@@ -88,7 +92,7 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 #### Screenshot 4 — Claude Code showing the five-check plan
 
-![alt text](screenshots/Assignment7-SS3.png)
+![alt text](screenshots/Assignment7-SS4.png)
 
 ---
 
@@ -96,11 +100,11 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 **1. Which part of this task represents the Gather phase?**
 
-Write your answer here.
+The Gather phase is the collection of AWS resource information using read-only CLI commands. Commands such as list-buckets, get-public-access-block, describe-security-groups, describe-db-instances, and describe-volumes gather the evidence required for the audit without modifying any AWS resources.
 
 **2. Did every proposed command start with `describe-`, `get-`, or `list-`? Why does that matter?**
 
-Write your answer here.
+Yes. The proposed AWS operations used describe-, get-, or list-* actions. This matters because the audit is intended to collect and inspect AWS configuration without changing resource state. Using read-only operations reduces the risk of accidentally modifying, deleting, or disrupting infrastructure during the audit.
 
 ---
 
@@ -116,19 +120,19 @@ Make it executable and confirm it has no syntax errors.
 
 #### Screenshot 5 — Top section of `aws-audit.sh` showing the variables and the checks array
 
-![alt text](screenshots/Assignment7-SS4.png)
+![alt text](screenshots/Assignment7-SS5.png)
 
 ---
 
 #### Screenshot 6 — One check function (for example `check_ssh_open_to_world`) showing the AWS CLI call and conditional
 
-Add your screenshot here.
+![alt text](screenshots/Assignment7-SS6.png)
 
 ---
 
 #### Screenshot 7 — Output of `bash -n scripts/aws-audit.sh` and `ls -l scripts/aws-audit.sh`
 
-Add your screenshot here.
+![alt text](screenshots/Assignment7-SS7.png)
 
 ---
 
@@ -136,15 +140,17 @@ Add your screenshot here.
 
 **1. What is stored in the checks array, and how does the loop use it?**
 
-Write your answer here.
+The checks array stores the names of the five Bash functions that perform the AWS audit checks. The for loop iterates through each function name and invokes it, allowing all five audit checks to run in a consistent sequence without repeating the function calls manually.
 
 **2. Why does every AWS CLI call in this script use `--query` and `--output text` instead of parsing raw JSON?**
 
-Write your answer here.
+--query limits the AWS CLI output to only the fields required by each audit check, while --output text converts those values into simple shell-friendly output. This makes the Bash conditionals easier to evaluate and avoids adding a separate JSON parsing dependency such as --jq.
 
 **3. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Write your answer here.
+Different exit codes allow users and automation tools to distinguish the overall audit result without parsing the report text. Exit code 0 represents HEALTHY, 1 represents WARN, and 2 represents FAIL. This makes the script easier to integrate into CI/CD pipelines or other automation while still remaining read-only.
+
+
 
 ---
 
@@ -158,13 +164,13 @@ Run the script against your live AWS account and capture the current state befor
 
 #### Screenshot 8 — Output of `./scripts/aws-audit.sh` showing your Full Name and all five checks
 
-![alt text](screenshots/Assignment7-SS5.png)
+![alt text](screenshots/Assignment7-SS8.png)
 
 ---
 
 #### Screenshot 9 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![alt text](screenshots/Assignment7-SS9.png)
 
 ---
 
@@ -172,15 +178,15 @@ Add your screenshot here.
 
 **1. What is the overall status of your baseline audit?**
 
-Write your answer here.
+The overall status of my baseline audit is WARN. The audit identified security and encryption configurations that require review, while other checks passed successfully.
 
 **2. Did any check return FAIL or WARN? If so, which one, and what evidence did it show?**
 
-Write your answer here.
+Yes. The audit returned WARN findings. The S3 public-access check reported that my static website bucket did not have all four bucket-level Public Access Block settings enabled. The SSH check identified a security group allowing port 22 from 0.0.0.0/0, and the EBS encryption check identified unencrypted EBS volumes. The MySQL port 3306 and RDS public-accessibility checks passed.
 
 **3. If every check passed, what does that tell you about the security posture of your account so far?**
 
-Write your answer here.
+If every check passed, it would indicate that the resources tested by the script currently satisfy the defined security controls. However, it would not prove that the entire AWS account is completely secure because the script checks only the specified configurations.
 
 ---
 
@@ -194,13 +200,13 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 #### Screenshot 10 — `SKILL.md` showing the frontmatter, tool restrictions, and safety rules
 
-![alt text](screenshots/Assignment7-SS6.png)
+![alt text](screenshots/Assignment7-SS10.png)
 
 ---
 
 #### Screenshot 11 — `/aws-audit` output showing findings, cost/risk impact, and a recommended remediation command (or a clean report if your baseline passed everything)
 
-![alt text](screenshots/Assignment7-SS7.png)
+![alt text](screenshots/Assignment7-SS11.png)
 
 ---
 
@@ -208,15 +214,16 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Write your answer here.
+
+Bash allows the skill to execute the read-only audit script, while Read and Grep allow it to inspect and search the generated report. Write is intentionally excluded so the skill cannot modify the audit files or automatically change configurations as part of remediation.
 
 **2. What part is performed by Bash, and what part is performed by Claude?**
 
-Write your answer here.
+Bash executes the deterministic audit script and collects the AWS configuration evidence. Claude interprets the generated report, explains the PASS/WARN/FAIL findings, assesses their security or cost impact, and recommends remediation without executing it.
 
 **3. Why is estimating cost/risk impact something the AI adds on top of a plain PASS/FAIL script?**
 
-Write your answer here.
+The Bash script identifies whether a resource meets predefined checks, while AI can add context by explaining why a finding matters, its possible security or cost implications, and appropriate remediation. This makes the raw audit results easier to understand and act on.
 
 ---
 
@@ -230,13 +237,13 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 #### Screenshot 12 — Output of the `revoke-security-group-ingress` and `authorize-security-group-ingress` commands you ran yourself
 
-![alt text](screenshots/Assignment7-SS8.png)
+![alt text](screenshots/Assignment7-SS12.png)
 
 ---
 
 #### Screenshot 13 — Rerun of `./scripts/aws-audit.sh` showing the finding is now PASS
 
-![alt text](screenshots/Assignment7-SS9.png)
+![alt text](screenshots/Assignment7-SS13.png)
 
 ---
 
@@ -244,19 +251,21 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 **1. Which exact finding did you fix, and what command did you run?**
 
-Write your answer here.
+I fixed the finding that identified SSH port 22 as being exposed to the whole IPv4 internet through 0.0.0.0/0. I manually revoked the existing ingress rule using aws ec2 revoke-security-group-ingress and then created a replacement SSH rule using aws ec2 authorize-security-group-ingress, restricting access to my current public IP address with a /32 CIDR. 
 
 **2. Why did you scope the new rule to your own IP address instead of leaving it open to `0.0.0.0/0`?**
 
-Write your answer here.
+I restricted SSH access to my own public IP using a /32 CIDR because 0.0.0.0/0 allows connection attempts from anywhere on the IPv4 internet. Restricting the rule follows the principle of least privilege by allowing SSH access only from the specific network location that requires it.
 
 **3. Did Claude execute the remediation command, or did you? Why does that matter?**
 
-Write your answer here.
+I executed the remediation commands manually. Claude only analyzed the audit findings and recommended remediation. This separation matters because the /aws-audit skill is intentionally read-only and must not make changes to AWS resources automatically.
 
 **4. Which phase of the Agentic Loop does the Bash script represent? Which phase does Claude's explanation represent? Which phase is you running the fix?**
 
-Write your answer here.
+The Bash audit script represents the Gather phase because it collects the current AWS configuration and identifies findings. Claude's interpretation represents the Reason phase because it analyzes the evidence, explains the security or cost impact, and recommends remediation. My manual execution of the remediation command represents the Act phase because I reviewed the recommendation and applied the AWS configuration change myself. The second audit run then verifies the result and closes the feedback loop.
+
+
 
 ---
 
@@ -283,13 +292,13 @@ Suggested tags:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eaHwh_gb
 
 ---
 
 #### Screenshot of Published LinkedIn Post
 
-Add your screenshot here.
+![alt text](Linked-ASS-07.png)
 
 ---
 
@@ -315,21 +324,21 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: AWS resources confirmed and workspace created (Screenshots 1–2)
-- [ ] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
-- [ ] Task 3: Claude produced a read-only five-check audit plan before any script existed (Screenshot 4)
-- [ ] Task 4: `aws-audit.sh` built, executable, and passes `bash -n` (Screenshots 5–7)
-- [ ] Task 5: Baseline audit captured and saved with Full Name visible (Screenshots 8–9)
-- [ ] Task 6: `/aws-audit` skill loads and runs successfully with no Write permission (Screenshots 10–11)
-- [ ] Task 7: A real finding was fixed by you and reverified as PASS (Screenshots 12–13)
-- [ ] Skill never executed a remediation command
-- [ ] New security group rule is scoped to your own IP, not `0.0.0.0/0`
-- [ ] All 13 required task screenshots are included
-- [ ] All "Notes You Must Write" questions are answered in your own words
-- [ ] No AWS credentials or unblurred account IDs exposed
-- [ ] LinkedIn post published and URL submitted
-- [ ] GitHub repository URL included in submission
-- [ ] All assignment files committed and visible in GitHub repository
+- [x] Task 1: AWS resources confirmed and workspace created (Screenshots 1–2)
+- [x] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
+- [x] Task 3: Claude produced a read-only five-check audit plan before any script existed (Screenshot 4)
+- [x] Task 4: `aws-audit.sh` built, executable, and passes `bash -n` (Screenshots 5–7)
+- [x] Task 5: Baseline audit captured and saved with Full Name visible (Screenshots 8–9)
+- [x] Task 6: `/aws-audit` skill loads and runs successfully with no Write permission (Screenshots 10–11)
+- [x] Task 7: A real finding was fixed by you and reverified as PASS (Screenshots 12–13)
+- [x] Skill never executed a remediation command
+- [x] New security group rule is scoped to your own IP, not `0.0.0.0/0`
+- [x] All 13 required task screenshots are included
+- [x] All "Notes You Must Write" questions are answered in your own words
+- [x] No AWS credentials or unblurred account IDs exposed
+- [x] LinkedIn post published and URL submitted
+- [x] GitHub repository URL included in submission
+- [x] All assignment files committed and visible in GitHub repository
 
 ---
 

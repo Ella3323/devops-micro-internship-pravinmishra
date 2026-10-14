@@ -16,7 +16,6 @@ You will use EC2 `user_data` to install the required software, initialize the Ep
 
 ## Goal
 
-<<<<<<< HEAD
 Define a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) and private subnet (10.0.2.0/24), an Internet Gateway with public routing, an EC2 Security Group (SSH 22, HTTP 80), and an RDS Security Group (MySQL 3306 only from the EC2 Security Group).
 
 ### Evidence
@@ -140,9 +139,6 @@ Write your answer here.
 ## Goal
 
 Publish a LinkedIn post about what you achieved in this assignment, with public or "Anyone" visibility.
-=======
-Prepare your local environment by installing Terraform, AWS CLI, and the HashiCorp Terraform extension in VS Code, configuring AWS CLI, and confirming that all required tools are working correctly.
->>>>>>> upstream/main
 
 ## Evidence
 
@@ -616,73 +612,73 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Installed and verified Terraform
-- [ ] Installed and verified AWS CLI
-- [ ] Configured AWS CLI
-- [ ] Confirmed the AWS Region
-- [ ] Installed the HashiCorp Terraform extension
-- [ ] Created the modular Terraform project
-- [ ] Created the root `main.tf`, `variables.tf`, and `outputs.tf`
-- [ ] Created the Network module
-- [ ] Created the EC2 module
-- [ ] Created the RDS module
-- [ ] Created the EC2 `user_data.sh`
-- [ ] Created VPC `10.0.0.0/16`
-- [ ] Created public subnet `10.0.1.0/24`
-- [ ] Created private DB subnet A `10.0.2.0/24`
-- [ ] Created private DB subnet B `10.0.3.0/24`
-- [ ] Used different Availability Zones for the database subnets
-- [ ] Created and attached the Internet Gateway
-- [ ] Created the public route table
-- [ ] Associated the public subnet with the public route table
-- [ ] Created the EC2 Security Group
-- [ ] Allowed HTTP port `80`
-- [ ] Restricted SSH port `22`
-- [ ] Created the RDS Security Group
-- [ ] Allowed MySQL port `3306` from the EC2 Security Group only
-- [ ] Exposed the required Network module outputs
-- [ ] Defined the EC2 instance
-- [ ] Connected `user_data.sh` using the EC2 `user_data` argument
-- [ ] Configured EC2 with a public IP
-- [ ] Installed the required software using user data
-- [ ] Created the RDS DB subnet group
-- [ ] Created Amazon RDS for MySQL
-- [ ] Confirmed RDS is not publicly accessible
-- [ ] Configured sensitive database variables
-- [ ] Exposed the RDS endpoint
-- [ ] Connected all modules through the root module
-- [ ] Passed Network module outputs to EC2 and RDS
-- [ ] Added root EC2 public IP and RDS endpoint outputs
-- [ ] Completed `terraform init`
-- [ ] Completed `terraform validate`
-- [ ] Reviewed `terraform plan`
-- [ ] Completed `terraform apply`
-- [ ] Verified EC2 is running
-- [ ] Verified RDS is available
-- [ ] Verified user data installation
-- [ ] Connected to EC2 using SSH
-- [ ] Cloned EpicBook
-- [ ] Created the `bookstore` database
-- [ ] Imported the database schema
-- [ ] Imported author seed data
-- [ ] Imported book seed data
-- [ ] Verified database records
-- [ ] Installed EpicBook dependencies
-- [ ] Configured EpicBook to use RDS
-- [ ] Configured Nginx
-- [ ] Started EpicBook
-- [ ] Verified port `8080`
-- [ ] Loaded EpicBook through the EC2 public IP
-- [ ] Verified product viewing
-- [ ] Verified Add to Cart
-- [ ] Verified the checkout or order workflow
-- [ ] Confirmed application actions in Amazon RDS
-- [ ] Completed `terraform destroy`
-- [ ] Published the required LinkedIn post
-- [ ] Added the LinkedIn post URL
-- [ ] Captured all 35 required screenshots
-- [ ] Confirmed that my full name is visible in the required screenshots
-- [ ] Checked that no sensitive information is exposed
+- [x] Installed and verified Terraform
+- [x] Installed and verified AWS CLI
+- [x] Configured AWS CLI
+- [x] Confirmed the AWS Region
+- [x] Installed the HashiCorp Terraform extension
+- [x] Created the modular Terraform project
+- [x] Created the root `main.tf`, `variables.tf`, and `outputs.tf`
+- [x] Created the Network module
+- [x] Created the EC2 module
+- [x] Created the RDS module
+- [x] Created the EC2 `user_data.sh`
+- [x] Created VPC `10.0.0.0/16`
+- [x] Created public subnet `10.0.1.0/24`
+- [x] Created private DB subnet A `10.0.2.0/24`
+- [x] Created private DB subnet B `10.0.3.0/24`
+- [x] Used different Availability Zones for the database subnets
+- [x] Created and attached the Internet Gateway
+- [x] Created the public route table
+- [x] Associated the public subnet with the public route table
+- [x] Created the EC2 Security Group
+- [x] Allowed HTTP port `80`
+- [x] Restricted SSH port `22`
+- [x] Created the RDS Security Group
+- [x] Allowed MySQL port `3306` from the EC2 Security Group only
+- [x] Exposed the required Network module outputs
+- [x] Defined the EC2 instance
+- [x] Connected `user_data.sh` using the EC2 `user_data` argument
+- [x] Configured EC2 with a public IP
+- [x] Installed the required software using user data
+- [x] Created the RDS DB subnet group
+- [x] Created Amazon RDS for MySQL
+- [x] Confirmed RDS is not publicly accessible
+- [x] Configured sensitive database variables
+- [x] Exposed the RDS endpoint
+- [x] Connected all modules through the root module
+- [x] Passed Network module outputs to EC2 and RDS
+- [x] Added root EC2 public IP and RDS endpoint outputs
+- [x] Completed `terraform init`
+- [x] Completed `terraform validate`
+- [x] Reviewed `terraform plan`
+- [x] Completed `terraform apply`
+- [x] Verified EC2 is running
+- [x] Verified RDS is available
+- [x] Verified user data installation
+- [x] Connected to EC2 using SSH
+- [x] Cloned EpicBook
+- [x] Created the `bookstore` database
+- [x] Imported the database schema
+- [x] Imported author seed data
+- [x] Imported book seed data
+- [x] Verified database records
+- [x] Installed EpicBook dependencies
+- [x] Configured EpicBook to use RDS
+- [x] Configured Nginx
+- [x] Started EpicBook
+- [x] Verified port `8080`
+- [x] Loaded EpicBook through the EC2 public IP
+- [x] Verified product viewing
+- [x] Verified Add to Cart
+- [x] Verified the checkout or order workflow
+- [x] Confirmed application actions in Amazon RDS
+- [x] Completed `terraform destroy`
+- [x] Published the required LinkedIn post
+- [x] Added the LinkedIn post URL
+- [x] Captured all 35 required screenshots
+- [x] Confirmed that my full name is visible in the required screenshots
+- [x] Checked that no sensitive information is exposed
 
 ---
 

@@ -24,7 +24,7 @@ This project will use the Git repository and Ansible controller prepared in Assi
 
 #### Screenshot 1 — Terminal showing the complete `ansible-adhoc-lab` project structure
 
-Add your screenshot here.
+![alt text](../week-08-terraform/screenshots/ASSIGNMENT2-SS1.png)
 
 ---
 

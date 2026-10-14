@@ -226,19 +226,21 @@ Add your screenshot here.
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+I created a custom VPC for the highly available EpicBook application in the eu-north-1 AWS Region. The architecture spans two Availability Zones, eu-north-1a and eu-north-1b. Public subnets are used for the Application Load Balancer and web-tier EC2 instances, while private subnets are used for the RDS database tier. Distributing the infrastructure across two Availability Zones reduces dependence on a single AZ and improves application availability
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+I configured an internet-facing Application Load Balancer (ha-alb) across the two public subnets. The ALB uses an HTTP listener on port 80 and forwards requests to the ha-web-tg target group. The web servers are managed by the ha-web-asg Auto Scaling Group with a desired capacity of 2, minimum capacity of 2, and maximum capacity of 4. The ASG distributes EC2 instances across the two Availability Zones and automatically replaces instances when required.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+I configured an Amazon RDS MySQL database for the EpicBook application in private subnets so that the database is not directly exposed to the public internet. The RDS configuration spans multiple Availability Zones for improved database availability. The EC2 application tier connects to RDS over MySQL port 3306 using security-group-controlled access. I validated database connectivity and configured the application to use the RDS endpoint through its database connection environment variable.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+Test A — Instance replacement: I removed/terminated one web-tier EC2 instance while keeping the Auto Scaling Group desired capacity at 2. The Auto Scaling Group detected the capacity change and launched a replacement instance. After initialization and health checks, the replacement became healthy and was available to the load balancer.
+
+Test B — Availability Zone/instance impact: I placed one EC2 instance in Standby to simulate loss of capacity in one Availability Zone. The remaining healthy instance continued serving requests through the Application Load Balancer. I refreshed the ALB DNS endpoint during the test and confirmed that the EpicBook application remained accessible.
 
 ---
 
@@ -254,13 +256,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eihGuJ8m
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![alt text](screenshots/Linkedin-post.png)
 
 ---
 
@@ -273,17 +275,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
-- [ ] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
-- [ ] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
-- [ ] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
-- [ ] Task 5: ALB created across both public subnets (Screenshots 13–14)
-- [ ] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
-- [ ] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
-- [ ] Task 8: Both high-availability tests completed (Screenshots 19–22)
-- [ ] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
-- [ ] LinkedIn post published and URL submitted
-- [ ] No sensitive data exposed
+- [x] Task 1: VPC, four subnets, IGW, NAT Gateway, and route tables created (Screenshots 1–5)
+- [x] Task 2: Least-privilege ALB, EC2, and RDS security groups created (Screenshots 6–8)
+- [x] Task 3: Private Multi-AZ RDS created (Screenshots 9–10)
+- [x] Task 4: Self-configuring Launch Template created and tested (Screenshots 11–12)
+- [x] Task 5: ALB created across both public subnets (Screenshots 13–14)
+- [x] Task 6: Auto Scaling Group running two instances across two AZs (Screenshots 15–16)
+- [x] Task 7: Application verified through the ALB with a database read and write (Screenshots 17–18)
+- [x] Task 8: Both high-availability tests completed (Screenshots 19–22)
+- [x] Task 9: Architecture and test-results summary completed (Screenshot 23 & Notes)
+- [x] LinkedIn post published and URL submitted
+- [x] No sensitive data exposed
 
 ---
 

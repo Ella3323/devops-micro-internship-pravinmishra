@@ -464,13 +464,13 @@ Write the post in your own words, include at least one project image or other pr
 
 # Completion Checklist
 
-- [ ] Selected AWS or Azure
-- [ ] Added and reviewed the Agentic AI starter files
-- [ ] Configured `CLAUDE.md`
-- [ ] Configured the Terraform Engineer subagent
-- [ ] Configured the Architecture and Security Reviewer subagent
-- [ ] Connected Terraform MCP
-- [ ] Configured validation hooks and safety guardrails
+- [x] Selected AWS or Azure
+- [x] Added and reviewed the Agentic AI starter files
+- [x] Configured `CLAUDE.md`
+- [x] Configured the Terraform Engineer subagent
+- [x] Configured the Architecture and Security Reviewer subagent
+- [x] Connected Terraform MCP
+- [x] Configured validation hooks and safety guardrails
 - [ ] Created the architecture diagram
 - [ ] Created the six-subnet design
 - [ ] Configured public Web Tier routing

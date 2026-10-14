@@ -74,13 +74,13 @@ http://13.212.33.24
 
 # Completion Checklist
 
-- [ ] EC2 instance launched in a public subnet with SSH (22) and HTTP (80) allowed
-- [ ] Connected to the instance via SSH
-- [ ] Web server (Nginx or Apache) installed
-- [ ] Mini Finance repository cloned and files copied to the web server root
-- [ ] Web server started and website verified in the browser (Screenshot 1)
-- [ ] EC2 Public IP URL included
-- [ ] No sensitive data exposed
+- [x] EC2 instance launched in a public subnet with SSH (22) and HTTP (80) allowed
+- [x] Connected to the instance via SSH
+- [x] Web server (Nginx or Apache) installed
+- [x] Mini Finance repository cloned and files copied to the web server root
+- [x] Web server started and website verified in the browser (Screenshot 1)
+- [x] EC2 Public IP URL included
+- [x] No sensitive data exposed
 
 ---
 

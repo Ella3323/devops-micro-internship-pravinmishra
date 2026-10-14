@@ -168,13 +168,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/e9SzmqJH
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![alt text](Linked-ASS-06.png)
 
 ---
 
@@ -187,14 +187,14 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Architecture diagram completed
-- [ ] Task 2: AWS Region and services documented
-- [ ] Task 3: Public ALB DNS confirmed working
-- [ ] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
-- [ ] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
-- [ ] LinkedIn post published and URL submitted
-- [ ] App Tier and Database Tier confirmed not publicly accessible
-- [ ] No sensitive data exposed
+- [x] Task 1: Architecture diagram completed
+- [x] Task 2: AWS Region and services documented
+- [x] Task 3: Public ALB DNS confirmed working
+- [x] Task 4: All six evidence screenshots captured (Web Tier, App Tier, both ALBs, RDS + replica, app UI)
+- [x] Task 5: Deployment summary completed (what worked, issues/fixes, tools/sources)
+- [x] LinkedIn post published and URL submitted
+- [x] App Tier and Database Tier confirmed not publicly accessible
+- [x] No sensitive data exposed
 
 ---
 

@@ -53,13 +53,13 @@ It is important to set up budget alerts because they help me monitor my AWS spen
 
 # Completion Checklist
 
-- [ ] AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Logged in to the AWS Management Console
-- [ ] Monthly Cost Budget created with name, amount, and start month
-- [ ] Budget alert thresholds and notification email configured
-- [ ] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
-- [ ] Notes question answered
-- [ ] No sensitive billing or account information exposed
+- [x] AWS Free Tier account created and Basic Support Plan (Free) selected
+- [x] Logged in to the AWS Management Console
+- [x] Monthly Cost Budget created with name, amount, and start month
+- [x] Budget alert thresholds and notification email configured
+- [x] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
+- [x] Notes question answered
+- [x] No sensitive billing or account information exposed
 
 ---
 

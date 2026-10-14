@@ -224,7 +224,6 @@ Add a screenshot of the terminal showing successful `terraform destroy` completi
 
 ---
 
-<<<<<<< HEAD
 #### Screenshot 9 — Terminal showing that Nginx is active and running
 
 ![alt text](screenshots/ASSIGNMENT3-SS9.png)
@@ -232,9 +231,6 @@ Add a screenshot of the terminal showing successful `terraform destroy` completi
 ---
 
 # Task 8 — Test the Deployment
-=======
-# Task 7 — Share Your Deployment Progress on LinkedIn
->>>>>>> upstream/main
 
 ## Goal
 
@@ -275,7 +271,6 @@ Ensure that no passwords, private keys, account IDs, access tokens, or other sen
 
 ---
 
-<<<<<<< HEAD
 ### Notes
 
 Write a short summary of what you built and any issues you encountered and how you resolved them.
@@ -292,8 +287,6 @@ Issues and how I fixed them
 
 ---
 
-=======
->>>>>>> upstream/main
 # Submission Instructions
 
 - Complete Tasks 0–7 in sequence.
@@ -310,38 +303,38 @@ Issues and how I fixed them
 
 # Completion Checklist
 
-- [ ] Installed Terraform and verified it using `terraform version`
-- [ ] Installed Azure CLI and verified it using `az version`
-- [ ] Signed in to Azure and confirmed the correct subscription
-- [ ] Installed and enabled the HashiCorp Terraform extension in VS Code
-- [ ] Created the `terraform-react-azure` project
-- [ ] Created `main.tf`
-- [ ] Defined the Terraform and AzureRM provider configuration
-- [ ] Defined the resource group
-- [ ] Defined the virtual network and subnet
-- [ ] Defined the Network Security Group
-- [ ] Configured SSH and HTTP rules
-- [ ] Defined the public IP and network interface
-- [ ] Created `cloud-init.sh`
-- [ ] Reviewed the React application repository instructions
-- [ ] Created the complete deployment workflow inside `cloud-init.sh`
-- [ ] Defined the Linux virtual machine
-- [ ] Connected `cloud-init.sh` to the VM using `custom_data`
-- [ ] Used `file()` and `base64encode()` correctly
-- [ ] Added the Terraform public IP output
-- [ ] Completed `terraform init` successfully
-- [ ] Reviewed the Terraform execution plan
-- [ ] Completed `terraform apply` successfully
-- [ ] Recorded the VM public IP
-- [ ] Connected to the VM through SSH
-- [ ] Verified that the automated deployment completed successfully
-- [ ] Verified that Nginx is running
-- [ ] Verified the React application through the browser
-- [ ] Completed `terraform destroy` successfully
-- [ ] Shared the React application deployment progress on LinkedIn by following Task 7
-- [ ] Captured all 16 required screenshots
-- [ ] Confirmed that my full name is visible in the required screenshots
-- [ ] Checked that no passwords, keys, account IDs, access tokens, or other sensitive information are exposed
+- [x] Installed Terraform and verified it using `terraform version`
+- [x] Installed Azure CLI and verified it using `az version`
+- [x] Signed in to Azure and confirmed the correct subscription
+- [x] Installed and enabled the HashiCorp Terraform extension in VS Code
+- [x] Created the `terraform-react-azure` project
+- [x] Created `main.tf`
+- [x] Defined the Terraform and AzureRM provider configuration
+- [x] Defined the resource group
+- [x] Defined the virtual network and subnet
+- [x] Defined the Network Security Group
+- [x] Configured SSH and HTTP rules
+- [x] Defined the public IP and network interface
+- [x] Created `cloud-init.sh`
+- [x] Reviewed the React application repository instructions
+- [x] Created the complete deployment workflow inside `cloud-init.sh`
+- [x] Defined the Linux virtual machine
+- [x] Connected `cloud-init.sh` to the VM using `custom_data`
+- [x] Used `file()` and `base64encode()` correctly
+- [x] Added the Terraform public IP output
+- [x] Completed `terraform init` successfully
+- [x] Reviewed the Terraform execution plan
+- [x] Completed `terraform apply` successfully
+- [x] Recorded the VM public IP
+- [x] Connected to the VM through SSH
+- [x] Verified that the automated deployment completed successfully
+- [x] Verified that Nginx is running
+- [x] Verified the React application through the browser
+- [x] Completed `terraform destroy` successfully
+- [x] Shared the React application deployment progress on LinkedIn by following Task 7
+- [x] Captured all 16 required screenshots
+- [x] Confirmed that my full name is visible in the required screenshots
+- [x] Checked that no passwords, keys, account IDs, access tokens, or other sensitive information are exposed
 
 ---
 
