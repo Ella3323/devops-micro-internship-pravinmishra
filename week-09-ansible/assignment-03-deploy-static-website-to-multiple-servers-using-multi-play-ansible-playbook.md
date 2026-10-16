@@ -31,7 +31,7 @@ Create the required folders and files for the Ansible project.
 
 ### Screenshot 1 — Terminal or VS Code showing the complete `static-web` project structure
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS1.png)
 
 ---
 
@@ -45,7 +45,7 @@ Add both Ubuntu servers to the Ansible inventory.
 
 ### Screenshot 2 — Output of `ansible-inventory -i inventory.ini --graph` showing `web1` and `web2`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS2.png)
 
 ---
 
@@ -75,7 +75,7 @@ Confirm that the Ansible controller can connect to both servers.
 
 ### Screenshot 3 — Ansible ping output showing `SUCCESS` and `pong` for both servers
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS3.png)
 
 ---
 
@@ -89,7 +89,7 @@ Download `index.html` to the Ansible controller and personalize the website with
 
 ### Screenshot 4 — Edited `files/index.html` showing the footer line with your full name
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS4.png)
 
 ---
 
@@ -176,7 +176,7 @@ Check the playbook for YAML or Ansible syntax errors before running it.
 
 ### Screenshot 5 — Successful syntax-check output showing `playbook: site.yml`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS5.png)
 
 ---
 
@@ -190,13 +190,13 @@ Install Nginx, deploy the website, and verify both servers in one playbook run.
 
 ### Screenshot 6 — Play 3 verification showing HTTP `200` for both servers
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS6.png)
 
 ---
 
 ### Screenshot 7 — Final play recap showing `unreachable=0` and `failed=0` for `web1`, `web2`, and `localhost`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS7.png)
 
 ---
 
@@ -210,7 +210,7 @@ Run the playbook again and confirm that it does not make unnecessary changes.
 
 ### Screenshot 8 — Second playbook run showing the play recap with `changed=0`, `unreachable=0`, and `failed=0` for both web servers
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS8.png)
 
 ---
 
@@ -224,19 +224,19 @@ Confirm that the static website is accessible from both public IP addresses.
 
 ### Screenshot 9 — `curl -I` output showing HTTP `200 OK` from both servers
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS9.png)
 
 ---
 
 ### Screenshot 10 — Browser showing the website from Server 1 with the public IP and your full name visible
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS10.png)
 
 ---
 
 ### Screenshot 11 — Browser showing the website from Server 2 with the public IP and your full name visible
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS11.png)
 
 ---
 
@@ -322,37 +322,41 @@ Answer the following in your own words:
 
 **1. What issue did you face while completing this assignment, and how did you fix it?**
 
-Add your answer here.
+Playbook Variable Scoping & Execution Issue: During the final playbook task to verify the website's HTTP 200 status, I encountered an "undefined variable" error for ansible_host. This occurred because the play was targeting localhost, which doesn't natively possess the inventory variables of the web servers.
+ 
+ Fix: I refactored the site.yml playbook to target the web group directly instead of localhost. By utilizing the inventory_hostname variable within the uri module, Ansible successfully iterated through the actual web servers. This also ensured the playbook was fully idempotent, reporting zero unintended changes on subsequent runs.
 
 ---
 
 **2. What did you learn from this assignment?**
 
-Add your answer here.
+I learned how to use a multi-play Ansible playbook to manage multiple servers from one controller. I also learned how to install Nginx, deploy website files, use handlers, verify HTTP responses, and test idempotency.
 
 ---
 
 **3. Why is it useful to split installation, deployment, and verification into separate plays?**
 
-Add your answer here.
+Separating the responsibilities makes the playbook easier to understand, troubleshoot, maintain, and reuse. Each play has a specific purpose instead of combining every operation into one section..
 
 ---
 
 **4. What is one benefit of using the Ansible `copy` module instead of cloning the website directly from Git on every managed server?**
 
-Add your answer here.
+The copy module allows the controller to distribute the same approved website file consistently to every managed server. Ansible also detects whether the destination file has changed before copying it again.
 
 ---
 
 **5. What does idempotency mean in this assignment?**
 
-Add your answer here.
+Idempotency means that running the same playbook repeatedly produces the required state without making unnecessary changes. On the second run, the web servers should normally show changed=0.
 
 ---
 
 **6. What does the Ansible `uri` module verify in Play 3?**
 
-Add your answer here.
+The uri module sends HTTP requests from the Ansible controller to both web servers and verifies that each website responds with the expected HTTP status code 200.
+
+
 
 ---
 
@@ -360,10 +364,10 @@ Add your answer here.
 
 Confirm that the following files are included in your assignment folder:
 
-- [ ] `inventory.ini`
-- [ ] `site.yml`
-- [ ] `files/index.html`
-- [ ] `README.md`
+- [x] `inventory.ini`
+- [x] `site.yml`
+- [x] `files/index.html`
+- [x] `README.md`
 
 ---
 

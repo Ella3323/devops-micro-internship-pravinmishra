@@ -24,13 +24,13 @@ This project will use the Git repository and Ansible controller prepared in Assi
 
 #### Screenshot 1 — Terminal showing the complete `ansible-adhoc-lab` project structure
 
-![alt text](../week-08-terraform/screenshots/ASSIGNMENT2-SS1.png)
+![alt text](screenshots/ASSIGNMENT2-SS1.png)
 
 ---
 
 #### Screenshot 2 — Terminal showing `git status --short` with the new project files and updated `.gitignore`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS2.png)
 
 ---
 
@@ -57,25 +57,25 @@ Do not configure both providers for this assignment.
 
 #### Screenshot 3 — Terraform configuration showing the three or four server roles and the `for_each` or `count` implementation
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS3.png)
 
 ---
 
 #### Screenshot 4 — Terraform configuration showing SSH restricted to the controller IP and HTTP allowed only for web hosts
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS4.png)
 
 ---
 
 #### Screenshot 5 — Terraform output configuration showing how public IP addresses are associated with the server roles
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS5.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Initialized multi-tier cloud infrastructure codebase, configured modular Terraform components for networking, compute, and security layers, structured Ansible inventory and ad-hoc automation for the web tier, and updated .gitignore rules for environment files.
 
 ---
 
@@ -89,25 +89,25 @@ Initialize and validate the Terraform configuration, review the execution plan, 
 
 #### Screenshot 6 — Final `terraform apply` output showing `Apply complete`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS6.png)
 
 ---
 
 #### Screenshot 7 — `terraform output public_ips` showing the role-to-IP mapping for all three or four VMs
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS7.png)
 
 ---
 
 #### Screenshot 8 — Azure Portal or AWS Management Console showing all three or four VMs in the `Running` state, with their role-based names visible
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS8.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Verified instance deployment health in the AWS Management Console, confirming all multi-tier virtual machines—including public web servers and private backend nodes—are successfully in the Running state with descriptive, role-based naming conventions applied.
 
 ---
 
@@ -121,13 +121,13 @@ Verify that each managed VM can be accessed from the Ansible controller using SS
 
 #### Screenshot 9 — Terminal showing successful SSH hostname output from all VMs
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS9.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Validated secure shell connectivity across the multi-tier infrastructure, confirming successful remote command execution and proper network routing from the control node to all provisioned virtual machines.
 
 ---
 
@@ -143,19 +143,19 @@ The inventory allows Ansible to run commands against all servers, or only specif
 
 #### Screenshot 10 — `inventory.ini` showing the `web`, `app`, and `db` groups
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS10.png)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-inventory -i inventory.ini --graph`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS11.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Validated the Ansible inventory structure using the graph command, confirming proper logical grouping of hosts into web and private tiers for targeted configuration management and playbook execution.
 
 ---
 
@@ -171,43 +171,45 @@ This task proves that the inventory is working and that Ansible can control mult
 
 #### Screenshot 12 — Output of `ansible all -i inventory.ini -m ping`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS12.png)
 
 ---
 
 #### Screenshot 13 — Output of `ansible all -i inventory.ini -m command -a "uptime"`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS13.png)
 
 ---
 
 #### Screenshot 14 — Output of `ansible web -i inventory.ini -m apt -a "name=nginx state=present update_cache=yes" --become`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS14.png)
 
 ---
 
 #### Screenshot 15 — Output of `ansible web -i inventory.ini -m service -a "name=nginx state=started enabled=yes" --become`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS15.png)
 
 ---
 
 #### Screenshot 16 — Output of `ansible all -i inventory.ini -m apt -a "name=htop state=present update_cache=yes" --become`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS16.png)
 
 ---
 
 #### Screenshot 17 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx"`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT2-SS17.png)
 
 ---
 
 ### Notes
 
-Add your task notes here.
+Executed an Ansible ad-hoc command targeting the web group to verify runtime service health, confirming that Nginx is actively running (is-active) across all provisioned public web instances.
+
+
 
 ---
 
@@ -235,37 +237,45 @@ Answer the following in your own words:
 
 **1. What is the purpose of an Ansible inventory file?**
 
-Add your answer here.
+1. What is the purpose of an Ansible inventory file?
+
+An Ansible inventory file defines and organizes the managed nodes (servers and hosts) that your control node will connect to, manage, and configure.
+
+Specifically, its key purposes include:
+
+1. Host Grouping: Organizing your infrastructure into logical groups and tiers—such as web, app, and db—so you can target specific sets of servers with your playbooks.
+
+2. Connection Routing & Variables: Mapping out connection details like public IP addresses, private IP addresses, SSH keys, ports, and proxy configurations (such as ProxyJump) required to safely reach and authenticate with your instances.
 
 ---
 
 **2. What is the difference between the `web`, `app`, and `db` groups in your inventory?**
 
-Add your answer here.
+The web group contains servers that handle user requests and display the website. The app group contains servers that run the application's logic and process requests. The db group contains database servers that store and manage the application's data. Each group has its own role, but they work together to make the application function properly.
 
 ---
 
 **3. What does the Ansible `ping` module verify?**
 
-Add your answer here.
+The Ansible ping module checks whether Ansible can connect to a managed host and execute a basic task successfully. It helps confirm that the connection is working.
 
 ---
 
 **4. Why do package installation commands require `--become`?**
 
-Add your answer here.
+Package installation usually requires administrator privileges. The --become option allows Ansible to run commands with elevated permissions, such as using sudo.
 
 ---
 
 **5. When would you use an ad-hoc command instead of a playbook?**
 
-Add your answer here.
+I would use an ad-hoc command for quick, one-time tasks, such as checking server connectivity or restarting a service. For multiple tasks that need to be repeated, I would use a playbook.
 
 ---
 
 **6. What is one challenge you faced while setting up SSH or inventory, and how did you fix it?**
 
-Add your answer here.
+I would use an ad-hoc command for quick, one-time tasks, such as checking server connectivity or restarting a service. For multiple tasks that need to be repeated, I would use a playbook.
 
 ---
 
@@ -273,13 +283,13 @@ Add your answer here.
 
 Confirm that the following files are included in your assignment workspace:
 
-- [ ] `ansible-adhoc-lab/README.md`
-- [ ] `ansible-adhoc-lab/terraform/providers.tf`
-- [ ] `ansible-adhoc-lab/terraform/main.tf`
-- [ ] `ansible-adhoc-lab/terraform/variables.tf`
-- [ ] `ansible-adhoc-lab/terraform/outputs.tf`
-- [ ] `ansible-adhoc-lab/ansible/inventory.ini`
-- [ ] Updated `.gitignore`
+- [x] `ansible-adhoc-lab/README.md`
+- [x] `ansible-adhoc-lab/terraform/providers.tf`
+- [x] `ansible-adhoc-lab/terraform/main.tf`
+- [x] `ansible-adhoc-lab/terraform/variables.tf`
+- [x] `ansible-adhoc-lab/terraform/outputs.tf`
+- [x] `ansible-adhoc-lab/ansible/inventory.ini`
+- [x] Updated `.gitignore`
 
 ---
 

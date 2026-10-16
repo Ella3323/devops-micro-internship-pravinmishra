@@ -350,7 +350,7 @@ Submit your GitHub repository URL containing all assignment files, screenshots, 
 
 Paste your GitHub repository URL here:
 
-`Add your GitHub repository URL here`
+https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 
 ---
 
