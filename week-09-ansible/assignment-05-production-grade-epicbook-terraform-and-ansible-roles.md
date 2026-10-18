@@ -34,19 +34,19 @@ Answer the following in your own words:
 
 **1. Which cloud provider did you choose for this assignment?**
 
-Add your answer here.
+AWS Cloud Provider
 
 ---
 
 **2. Why is it useful to keep Terraform files and Ansible files in separate folders?**
 
-Add your answer here.
+Keeping Terraform and Ansible files in separate folders keeps the project organized and easier to manage. Terraform is used to create infrastructure, while Ansible is used to configure servers. It also makes troubleshooting easier because each tool has a clear responsibility. This separation helps teams maintain and automate infrastructure more efficiently.
 
 ---
 
 **3. What is the purpose of the `roles` directory in Ansible?**
 
-Add your answer here.
+The roles directory in Ansible is used to organize reusable automation tasks. Each role can manage a specific function, such as installing Nginx or configuring a database. It keeps playbooks clean, modular, and easier to maintain.
 
 ---
 
@@ -90,19 +90,27 @@ Answer the following in your own words:
 
 **1. What resources did Terraform create for this assignment?**
 
-Add your answer here.
+1. VPC
+2. SUBNET
+3. INTERNET GATEWAY
+4. RDS DATABSE
+5. EC2 INSTANCE
+6. SECURITY GROUP
+7. ROUTE TABLE
+8. KEY PAIR
+9. DATABSE SUBNET GROUP
 
 ---
 
 **2. Why should you review `terraform plan` before running `terraform apply`?**
 
-Add your answer here.
+terraform plan shows what changes Terraform will make before applying them. Reviewing it helps you catch unexpected resource creation, modification, or deletion. This reduces the risk of accidental infrastructure changes or downtime.
 
 ---
 
 **3. Why should database passwords not be shown in Terraform output?**
 
-Add your answer here.
+Database passwords should not appear in Terraform output because they are sensitive credentials. Exposing them can allow unauthorized users to access the database. Keeping them hidden helps protect security and confidential information.
 
 ---
 
@@ -126,19 +134,31 @@ Answer the following in your own words:
 
 **1. What command did you use to verify SSH access?**
 
-Add your answer here.
+ssh ubuntu@3.220.167.41 "hostname"
 
 ---
 
 **2. What proves that SSH key-based access worked successfully?**
 
-Add your answer here.
+The command returned the VM's hostname (ip-10-0-1-48) and I was never asked
+for a password. The only prompt was the one-time host fingerprint confirmation,
+which I accepted. This means the VM accepted my private key
+(~/.ssh/id_ed25519) against the public key Terraform uploaded when it created
+the VM.
 
 ---
 
 **3. What would you check if SSH returned `Permission denied (publickey)`?**
 
-Add your answer here.
+I would check these in order:
+1. The username matches the VM image (ubuntu for Ubuntu).
+2. The private key on my controller matches the public key Terraform uploaded
+   to the VM.
+3. SSH is actually offering that key: test with ssh -i ~/.ssh/id_ed25519 ...
+   and, if that works, load it into the agent with ssh-add.
+4. The private key file has safe permissions (chmod 600).
+5. I am connecting to the right public IP, and the security group still allows
+   port 22 from my current public IP.
 
 ---
 
@@ -176,25 +196,25 @@ Answer the following in your own words:
 
 **1. What is the purpose of `inventory.ini`?**
 
-Add your answer here.
+inventory.ini tells Ansible which servers to manage. It contains the servers’ IP addresses, hostnames, and connection details. It allows Ansible to know where to run playbooks and tasks.
 
 ---
 
 **2. What does `ansible_host` store?**
 
-Add your answer here.
+ansible_host stores the IP address or hostname of the target server. It tells Ansible where to connect using SSH.
 
 ---
 
 **3. What does `ansible_ssh_private_key_file` tell Ansible?**
 
-Add your answer here.
+ansible_ssh_private_key_file tells Ansible which private SSH key to use when connecting to a server. It allows Ansible to authenticate securely using key-based SSH access.
 
 ---
 
 **4. Why is `host_key_checking = False` used only for this temporary lab?**
 
-Add your answer here.
+host_key_checking = False skips SSH host-key verification, making a temporary lab easier to set up. It is not recommended for production because it can weaken SSH security and allow connections to an untrusted host.
 
 ---
 
@@ -226,19 +246,19 @@ Answer the following in your own words:
 
 **1. What is the purpose of `site.yml`?**
 
-Add your answer here.
+site.yml is the main Ansible playbook that defines what tasks should be run on the servers. It can call different roles to configure and manage the infrastructure.
 
 ---
 
 **2. Why should the roles run in the order `common`, `nginx`, and `epicbook`?**
 
-Add your answer here.
+The roles should run in that order because each step depends on the previous one. common sets up basic requirements, nginx installs/configures the web server, and epicbook deploys the application. This ensures the server is properly prepared before the application is deployed.
 
 ---
 
 **3. What does `become: true` allow Ansible to do?**
 
-Add your answer here.
+become: true allows Ansible to run tasks with elevated privileges, usually as the root user. It is commonly needed for tasks like installing packages or modifying system files.
 
 ---
 
@@ -264,19 +284,19 @@ Answer the following in your own words:
 
 **1. What is the responsibility of the `common` role?**
 
-Add your answer here.
+The common role handles basic server setup and common requirements. It may install essential packages, create users, and configure basic system settings. This prepares the server for the other roles.
 
 ---
 
 **2. Why should Nginx installation not be placed inside the `common` role?**
 
-Add your answer here.
+Nginx should not be in common because it is a specific web-server service, not a basic server requirement. Keeping it separate makes roles modular, reusable, and easier to maintain.
 
 ---
 
 **3. Why is `mysql-client` useful in this deployment?**
 
-Add your answer here.
+mysql-client allows the application server to connect to and interact with a MySQL database. It provides tools needed to run queries and test database connectivity.
 
 ---
 

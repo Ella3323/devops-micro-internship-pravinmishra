@@ -97,11 +97,6 @@ https://github.com/Ella3323/devops-micro-internship-pravinmishra.git
 https://www.linkedin.com/posts/pamela-ezeotika_dmibypravinmishra-agenticai-claudecode-ugcPost-7481239814198091776-5fUU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDjJUYBrDNdac3TpJMBKPF08Q4-AeIrB8E
 
 
-<<<<<<< HEAD
-=======
-`Add your URL here`
-
->>>>>>> upstream/main
 ---
 
 # Completion Checklist
