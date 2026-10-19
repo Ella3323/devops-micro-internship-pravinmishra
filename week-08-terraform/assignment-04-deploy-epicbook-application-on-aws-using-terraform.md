@@ -130,7 +130,7 @@ Confirm EpicBook is accessible through the EC2 public IP and that navigation, ca
 
 Write a short note describing any issue you faced, how you fixed it, and what you learned.
 
-Write your answer here.
+No issue
 
 ---
 
@@ -146,7 +146,7 @@ Publish a LinkedIn post about what you achieved in this assignment, with public 
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS1.png)
 
 ---
 
@@ -154,7 +154,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `aws --version` output.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS2.png)
 
 ---
 
@@ -162,7 +162,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS3.png)
 
 ---
 
@@ -202,7 +202,7 @@ terraform-aws-epicbook/
 
 Add a screenshot of the VS Code Explorer showing the complete root project and the `network`, `ec2`, and `rds` module directory structure.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS4.png)
 
 ---
 
@@ -231,7 +231,7 @@ The network module must include:
 
 Add a screenshot of VS Code showing the VPC, public subnet, and two private database subnet configurations.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS5.png)
 
 ---
 
@@ -239,7 +239,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the Internet Gateway, public route table, and route table association.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS6.png)
 
 ---
 
@@ -247,7 +247,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 and RDS Security Groups, including MySQL access from the EC2 Security Group only.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS7.png)
 
 ---
 
@@ -255,7 +255,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the network module outputs.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS8.png)
 
 ---
 
@@ -283,7 +283,7 @@ The `user_data.sh` script must install the required software without storing dat
 
 Add a screenshot of VS Code showing the EC2 resource and `user_data` configuration.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS9.png)
 
 ---
 
@@ -293,7 +293,7 @@ Add a screenshot of VS Code showing `user_data.sh`.
 
 Ensure that no credentials, passwords, private keys, access tokens, or application secrets are visible.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS10.png)
 
 ---
 
@@ -301,7 +301,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 module variables and outputs.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS11.png)
 
 ---
 
@@ -327,7 +327,7 @@ The RDS module must include:
 
 Add a screenshot of VS Code showing the DB subnet group and RDS MySQL configuration.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS12.png)
 
 ---
 
@@ -337,7 +337,7 @@ Add a screenshot of VS Code showing `publicly_accessible = false`, the RDS Secur
 
 Ensure that the database password and other sensitive values are hidden.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS13.png)
 
 ---
 
@@ -345,7 +345,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the RDS endpoint output.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS14.png)
 
 ---
 
@@ -361,7 +361,7 @@ Use the root Terraform configuration to call the Network, EC2, and RDS modules a
 
 Add a screenshot of VS Code showing the root `main.tf` with the Network, EC2, and RDS module blocks.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS15.png)
 
 ---
 
@@ -369,7 +369,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing values passed from the Network module to the EC2 and RDS modules.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS16.png)
 
 ---
 
@@ -377,7 +377,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the root EC2 public IP and RDS endpoint outputs.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS17.png)
 
 ---
 
@@ -393,7 +393,7 @@ Initialize the modular Terraform project, validate the configuration, review the
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS16.png)
 
 ---
 
@@ -401,7 +401,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `terraform validate` output.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS19.png)
 
 ---
 
@@ -409,7 +409,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan summary and proposed resources.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS20.png)
 
 ---
 
@@ -417,7 +417,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS21.png)
 
 ---
 
@@ -425,7 +425,7 @@ Add your screenshot here.
 
 Add a screenshot showing the EC2 public IP and RDS endpoint returned by `terraform output`.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS22.png)
 
 ---
 
@@ -441,7 +441,7 @@ Verify that the EC2 and RDS resources were successfully provisioned and confirm 
 
 Add a screenshot of AWS CLI showing the EC2 instance running.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS23.png)
 
 ---
 
@@ -449,7 +449,7 @@ Add your screenshot here.
 
 Add a screenshot of AWS CLI showing that RDS is available and not publicly accessible.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS24.png)
 
 ---
 
@@ -457,7 +457,7 @@ Add your screenshot here.
 
 Add a screenshot of the EC2 terminal showing the required software version checks and the active Nginx service.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS25.png)
 
 ---
 
@@ -475,7 +475,7 @@ Add a screenshot of the terminal showing a successful connection from EC2 to Ama
 
 Ensure that the database password is not visible.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS26.png)
 
 ---
 
@@ -483,7 +483,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the EpicBook tables and imported data.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS27.png)
 
 ---
 
@@ -499,7 +499,7 @@ Install EpicBook dependencies, configure the application to use Amazon RDS, conf
 
 Add a screenshot of the terminal showing successful dependency installation and the `node_modules` directory.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS28.png)
 
 ---
 
@@ -507,7 +507,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing a successful Nginx configuration test and active service status.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS29.png)
 
 ---
 
@@ -515,8 +515,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing EpicBook running or listening on port `8080`.
 
-Add your screenshot here.
-
+![alt text](screenshots/ASSIGNMENT4-SS30.png)
 ---
 
 # Task 10 — Test End-to-End Functionality
@@ -535,7 +534,7 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 Add a screenshot of the browser showing EpicBook using the EC2 public IP.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS32.png)
 
 ---
 
@@ -543,7 +542,7 @@ Add your screenshot here.
 
 Add a screenshot of the browser showing a successful cart or checkout action.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT4-SS33.png)
 
 ---
 
@@ -553,7 +552,7 @@ Add a screenshot of the terminal showing the corresponding RDS database record c
 
 Ensure that database credentials and other sensitive values are not visible.
 
-Add your screenshot here.
+
 
 ---
 
@@ -569,7 +568,7 @@ Remove all AWS resources created by the modular Terraform configuration.
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS11.png)
 
 ---
 
@@ -591,7 +590,8 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:**
+ https://lnkd.in/p/eQvdwvmJ
 
 ---
 

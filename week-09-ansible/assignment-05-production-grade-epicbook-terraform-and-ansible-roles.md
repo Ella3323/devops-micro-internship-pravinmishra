@@ -24,7 +24,7 @@ Terraform will be used to provision the cloud infrastructure. Ansible roles will
 
 #### Screenshot 1 — Terminal showing the completed `epicbook-prod` project structure
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS1.png)
 
 ---
 
@@ -62,25 +62,25 @@ Terraform will create the VM, managed MySQL database, networking, security rules
 
 #### Screenshot 2 — `terraform apply` completed successfully
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS2.png)
 
 ---
 
 #### Screenshot 3 — Output of `terraform output`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS3.png)
 
 ---
 
 #### Screenshot 4 — Azure Portal or AWS Console showing the VM running
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS4.png)
 
 ---
 
 #### Screenshot 5 — Azure Portal or AWS Console showing the managed MySQL database created
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS5.png)
 
 ---
 
@@ -124,7 +124,7 @@ Verify that the cloud VM can be accessed from the Ansible controller using SSH k
 
 #### Screenshot 6 — Successful SSH hostname check from the Ansible controller
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS6.png)
 
 ---
 
@@ -174,19 +174,19 @@ The inventory tells Ansible which VM to manage and which SSH user to use.
 
 #### Screenshot 7 — `inventory.ini` showing the VM under the `web` group
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS7.png)
 
 ---
 
 #### Screenshot 8 — Output of `ansible-inventory -i inventory.ini --graph`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS8.png)
 
 ---
 
 #### Screenshot 9 — Output of `ansible web -i inventory.ini -m ping`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS9.png)
 
 ---
 
@@ -230,13 +230,13 @@ The `site.yml` file will call the `common`, `nginx`, and `epicbook` roles.
 
 #### Screenshot 10 — `site.yml` showing the roles in the correct order
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS10.png)
 
 ---
 
 #### Screenshot 11 — Output of `ansible-playbook -i inventory.ini site.yml --syntax-check`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS11.png)
 
 ---
 
@@ -274,7 +274,7 @@ This role handles the common server setup before Nginx and the application are c
 
 #### Screenshot 12 — `roles/common/tasks/main.yml` showing the common setup tasks
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS12.png)
 
 ---
 
@@ -312,13 +312,13 @@ Nginx will receive browser traffic on port `80` and forward it to the EpicBook N
 
 #### Screenshot 13 — `roles/nginx/tasks/main.yml` showing Nginx installation and site configuration tasks
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS13.png)
 
 ---
 
 #### Screenshot 14 — `roles/nginx/templates/epicbook.conf.j2` showing the reverse proxy configuration
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS14.png)
 
 ---
 
@@ -328,19 +328,19 @@ Answer the following in your own words:
 
 **1. What is the responsibility of the `nginx` role?**
 
-Add your answer here.
+To install the Nginx web server, deploy custom virtual host configuration templates, and ensure the service is enabled and running.
 
 ---
 
 **2. Why is Nginx configured as a reverse proxy in this deployment?**
 
-Add your answer here.
+To securely receive client HTTP traffic on port 80 and forward requests safely to the backend Node.js application running internally on port 8080.
 
 ---
 
 **3. Why should the application port come from `group_vars/web.yml` instead of being hard-coded?**
 
-Add your answer here.
+It centralizes configuration parameters, making it easier to change application ports across templates and tasks without modifying role logic.
 
 ---
 
@@ -354,19 +354,19 @@ Create the `epicbook` role to deploy the EpicBook application, connect it to the
 
 #### Screenshot 15 — `roles/epicbook/tasks/main.yml` showing application deployment tasks
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS15.png)
 
 ---
 
 #### Screenshot 16 — Task or file showing how the database connection is configured, with secrets hidden
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS16.png)
 
 ---
 
 #### Screenshot 17 — Task or output showing the EpicBook application managed by PM2
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS17.png)
 
 ---
 
@@ -376,25 +376,25 @@ Answer the following in your own words:
 
 **1. What is the responsibility of the `epicbook` role?**
 
-Add your answer here.
+To clone or copy the application code, install Node.js dependencies, configure database environment variables, and manage the process using PM2.
 
 ---
 
 **2. Why is PM2 used for the EpicBook Node.js application?**
 
-Add your answer here.
+It functions as a production process manager that restarts the application automatically on crashes, handles background execution, and maintains system logs
 
 ---
 
 **3. Why should database passwords not be hard-coded in public files?**
 
-Add your answer here.
+Hard-coding plaintext credentials in shared or public repositories risks unauthorized database access and data compromise.
 
 ---
 
 **4. What does it mean for the application to run on port `8080` while Nginx listens on port `80`?**
 
-Add your answer here.
+Clients connect to Nginx publicly on standard HTTP port 80, while Nginx internally proxies traffic to the Node.js application listening locally on port 8080.
 
 ---
 
@@ -410,7 +410,7 @@ The `group_vars/web.yml` file stores values that can be reused across the Ansibl
 
 #### Screenshot 18 — `group_vars/web.yml` showing the application, PM2, and database variables, with passwords hidden or masked
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS18.png)
 
 ---
 
@@ -420,19 +420,19 @@ Answer the following in your own words:
 
 **1. What is the purpose of `group_vars/web.yml`?**
 
-Add your answer here.
+To store global variables, application settings, and database connection parameters mapped specifically to the web inventory group
 
 ---
 
 **2. Which values did you store in `group_vars/web.yml`?**
 
-Add your answer here.
+Application port, node environment settings, database host endpoint, database username, database name, and database password secrets
 
 ---
 
 **3. How did you handle the database password securely?**
 
-Add your answer here.
+By isolating variables within restricted group variable files and planning for encryption or secure environment variable injection.
 
 ---
 
@@ -452,31 +452,31 @@ The playbook should run the roles in this order:
 
 #### Screenshot 19 — Ansible playbook output showing the roles running
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS19.png)
 
 ---
 
 #### Screenshot 20 — Final Ansible recap showing `failed=0`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS20.png)
 
 ---
 
 #### Screenshot 21 — Output of `ansible web -i inventory.ini -m command -a "systemctl is-active nginx" --become`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS21.png)
 
 ---
 
 #### Screenshot 22 — Output of `ansible web -i inventory.ini -m command -a "pm2 status"`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS22.png)
 
 ---
 
 #### Screenshot 23 — Output of `ansible web -i inventory.ini -m command -a "curl -I http://localhost:8080"`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS23.png)
 
 ---
 
@@ -486,31 +486,31 @@ Answer the following in your own words:
 
 **1. What command did you run to execute the Ansible playbook?**
 
-Add your answer here.
+ansible-playbook -i inventory.ini site.yml
 
 ---
 
 **2. How do you know all roles completed successfully?**
 
-Add your answer here.
+The final execution summary output reported zero failed tasks across all applied roles.
 
 ---
 
 **3. What proves that Nginx is active?**
 
-Add your answer here.
+The systemctl is-active nginx command returned an active status.
 
 ---
 
 **4. What proves that PM2 is managing the EpicBook application?**
 
-Add your answer here.
+The pm2 status command showed the epicbook process running with an online status
 
 ---
 
 **5. What proves that the EpicBook application responds on port `8080`?**
 
-Add your answer here.
+Running curl -I http://localhost:8080 returned a valid HTTP response from the application server.
 
 ---
 
@@ -524,25 +524,25 @@ Verify that the EpicBook application is running, accessible in the browser, and 
 
 #### Screenshot 24 — Output of `curl -I http://<public_ip>`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS24.png)
 
 ---
 
 #### Screenshot 25 — Output of the cart API test command
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS25.png)
 
 ---
 
 #### Screenshot 26 — Output of the `/cart` HTTP status check
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS26.png)
 
 ---
 
 #### Screenshot 27 — Browser showing the EpicBook application loaded from `http://<public_ip>`
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT5-SS27.png)
 
 ---
 
@@ -552,25 +552,27 @@ Answer the following in your own words:
 
 **1. What HTTP response did you receive from the public application URL?**
 
-Add your answer here.
+An HTTP/1.1 200 OK response.
 
 ---
 
 **2. What did the cart API test prove?**
 
-Add your answer here.
+It proved that backend route handlers and API endpoints were fully operational.
 
 ---
 
 **3. What did the `/cart` status check return?**
 
-Add your answer here.
+An HTTP 200 OK status code.
 
 ---
 
 **4. What issue did you face during verification, and how did you fix it?**
 
-Add your answer here.
+PM2 initially started the application without loading database environment variables, causing Sequelize to crash with a connection refused error on port 3306. This was fixed by creating a PM2 ecosystem configuration file (ecosystem.config.js) to explicitly inject the correct Azure MySQL credentials and port settings.
+
+
 
 ---
 
@@ -598,61 +600,61 @@ Answer the following in your own words:
 
 **1. Why is Terraform used for infrastructure provisioning?**
 
-Add your answer here.
+It provides declarative Infrastructure as Code to deploy cloud resources consistently and repeatably.
 
 ---
 
 **2. Why are Ansible roles useful for production-style deployments?**
 
-Add your answer here.
+They establish an organized directory structure that cleanly modularizes tasks, templates, and handlers for scalability
 
 ---
 
 **3. What is the purpose of `group_vars/web.yml`?**
 
-Add your answer here.
+To centralize host-group specific configuration variables and maintain separation from playbook logic.
 
 ---
 
 **4. Why should database passwords not be committed to GitHub?**
 
-Add your answer here.
+To prevent sensitive security credentials from being exposed publicly in version history
 
 ---
 
 **5. What is the purpose of Nginx in this deployment?**
 
-Add your answer here.
+To act as a reverse proxy handling client web traffic on port 80 and forwarding requests to the application.
 
 ---
 
 **6. Why should the managed MySQL database not be publicly accessible?**
 
-Add your answer here.
+To protect backend data storage from unauthorized external exposure and network attacks.
 
 ---
 
 **7. Why is PM2 used for the EpicBook Node.js application?**
 
-Add your answer here.
+To guarantee application uptime, handle process restarts automatically, and manage background logging.
 
 ---
 
 **8. What does idempotency mean in Ansible?**
 
-Add your answer here.
+The ability to run playbooks multiple times safely so that changes are applied only when differences exist.
 
 ---
 
 **9. What issue did you face during the deployment, and how did you fix it?**
 
-Add your answer here.
+Environment variables weren't picked up automatically by PM2 during startup, which was resolved by implementing an explicit ecosystem configuration file (ecosystem.config.js).
 
 ---
 
 **10. What security improvement would you make before using this setup in production?**
 
-Add your answer here.
+I would integrate Ansible Vault for credential encryption, configure HTTPS using SSL/TLS certificates, and strictly restrict cloud firewall security rules.
 
 ---
 

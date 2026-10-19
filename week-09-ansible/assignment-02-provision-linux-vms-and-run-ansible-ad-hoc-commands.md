@@ -221,13 +221,13 @@ Executed an Ansible ad-hoc command targeting the web group to verify runtime ser
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+![alt text](image.png)
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](POST-ASS2.png)
 
 ---
 

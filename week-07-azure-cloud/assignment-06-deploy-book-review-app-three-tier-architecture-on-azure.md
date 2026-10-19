@@ -221,7 +221,23 @@ http://Book-Review-Web-ALB-878449260.us-east-1.elb.amazonaws.com
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+The Azure three-tier Book Review App was successfully deployed using an Application Gateway as the public entry point, Web1 and Web2 as the presentation tier, an Internal Load Balancer for application-tier traffic, App1 and App2 as the backend application servers, and Azure Database for MySQL as the database tier.
+
+Several issues were encountered during deployment, including SSH connectivity, VM public/private IP configuration, MySQL connectivity, backend application configuration, Nginx configuration, and unhealthy Application Gateway backend targets. These were resolved by verifying the correct private IP addresses, NSG rules, application ports, database configuration, Nginx services, and Application Gateway health probes.
+
+For availability, Web1 and Web2 were placed behind Azure Application Gateway. Availability was tested safely by stopping Nginx on Web1 rather than shutting down the VM. Application Gateway marked Web1 unhealthy and continued routing traffic through Web2. After Nginx was restarted on Web1, the health probe recovered and both Web1 and Web2 returned to Healthy status.
+
+Security was implemented using tier-specific NSG rules and private networking. Web and application VMs were designed to use private IP addresses, with the Application Gateway providing the public entry point. Traffic between tiers was restricted to the required ports, reducing unnecessary Internet exposure.
+
+Application and database credentials were handled using Azure Key Vault rather than embedding secrets directly in application code. Managed identities and controlled access were used where appropriate to improve secret-management security.
+
+Monitoring was implemented using Azure monitoring capabilities, including Application Gateway backend health, VM metrics, diagnostic information, and other Azure Monitor/Log Analytics capabilities to provide visibility into application and infrastructure health.
+
+For database protection, Azure Database for MySQL backup and recovery capabilities were considered as part of the deployment. Backup retention was configured to provide recovery protection while keeping the database tier isolated from unnecessary public access.
+
+Overall, the final architecture provides public application access through the Application Gateway while keeping the application and database tiers protected through private networking, NSG controls, secure secret management, health monitoring, load balancing, and backup/recovery controls.
+
+
 
 ---
 
@@ -234,15 +250,15 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Task 1: Architecture diagram and assumptions documented (Screenshots 1–2)
-- [ ] Task 2: Network foundation created with isolated tiers (Screenshots 3–5)
-- [ ] Task 3: Least-privilege security and secret management configured (Screenshots 6–7)
-- [ ] Task 4: Presentation tier deployed (Screenshots 8–9)
-- [ ] Task 5: Application tier deployed privately (Screenshots 10–12)
-- [ ] Task 6: Managed database tier deployed privately (Screenshots 13–15)
-- [ ] Task 7: Public entry, internal routing, and monitoring configured (Screenshots 16–18)
-- [ ] Task 8: End-to-end validation and availability test completed (Screenshots 19–22, Public Endpoint, Notes)
-- [ ] No sensitive data exposed
+- [x] Task 1: Architecture diagram and assumptions documented (Screenshots 1–2)
+- [x] Task 2: Network foundation created with isolated tiers (Screenshots 3–5)
+- [x] Task 3: Least-privilege security and secret management configured (Screenshots 6–7)
+- [x] Task 4: Presentation tier deployed (Screenshots 8–9)
+- [x] Task 5: Application tier deployed privately (Screenshots 10–12)
+- [x] Task 6: Managed database tier deployed privately (Screenshots 13–15)
+- [x] Task 7: Public entry, internal routing, and monitoring configured (Screenshots 16–18)
+- [x] Task 8: End-to-end validation and availability test completed (Screenshots 19–22, Public Endpoint, Notes)
+- [x] No sensitive data exposed
 
 ---
 

@@ -32,7 +32,7 @@ Add a screenshot of the terminal showing successful `terraform version` output.
 
 Add a screenshot of the terminal showing successful `az version` output.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS2.png)
 
 ---
 
@@ -40,7 +40,7 @@ Add your screenshot here.
 
 Add a screenshot of the VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT1-SS3.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a screenshot of VS Code showing the Linux virtual machine configuration, inc
 
 Ensure that passwords, private keys, account IDs, access tokens, and other sensitive information are hidden.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS2.png)
 
 ---
 
@@ -100,7 +100,7 @@ Add a screenshot of VS Code showing the completed `cloud-init.sh` deployment scr
 
 Ensure that no passwords, Azure credentials, access tokens, SSH private keys, or other sensitive information are visible.
 
-Add your screenshot here.
+
 
 ---
 
@@ -108,7 +108,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the public IP `output` block in `main.tf`.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS2.png)
 
 ---
 
@@ -156,7 +156,7 @@ Add a screenshot showing successful `terraform apply` completion.
 
 Add a screenshot showing the VM public IP address returned by `terraform output`.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT3-SS4.png)
 
 ## VM Public IP Address
 
@@ -220,7 +220,7 @@ Remove all Azure resources created by Terraform after completing the application
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-![alt text](screenshots/ASSIGNMENT3-SS8.png)
+![alt text](screenshots/ASSIGNMENT1-SS11.png)
 
 ---
 
