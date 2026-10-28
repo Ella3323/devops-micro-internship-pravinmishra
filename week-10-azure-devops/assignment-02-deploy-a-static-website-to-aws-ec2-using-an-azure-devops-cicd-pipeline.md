@@ -144,7 +144,7 @@ Add your screenshot here.
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+http://3.237.197.212/
 
 ---
 
@@ -152,7 +152,7 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+In this assignment, I implemented an automated CI/CD workflow to deploy a static website to an AWS EC2 instance using Azure DevOps. Terraform was used to provision the AWS infrastructure, while Ansible configured the Ubuntu EC2 server, installed and enabled Nginx, and prepared the deployment directory. I configured an Azure DevOps SSH Service Connection and used my self-hosted Linux agent to securely copy the website files to the EC2 instance and verify the deployment. I also configured an automatic pipeline trigger so that changes committed to the repository are automatically deployed to the website. Finally, I verified the deployment through the EC2 public IP and confirmed that the updated website was successfully served by Nginx.
 
 ---
 
@@ -167,11 +167,11 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![alt text](POST-ASS02.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+https://lnkd.in/p/dr_S28cj
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 

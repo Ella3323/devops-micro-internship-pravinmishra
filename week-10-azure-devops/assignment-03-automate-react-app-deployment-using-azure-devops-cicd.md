@@ -151,7 +151,7 @@ Add your screenshot here.
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+http://32.196.137.183/
 
 ---
 
@@ -159,7 +159,11 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+I implemented a multi-stage Azure DevOps CI/CD pipeline to automate the build, testing, artifact publishing, and deployment of a React application. The pipeline is automatically triggered by changes committed to the main branch. During the Build stage, the required Node.js environment and dependencies are prepared and the React production build is generated. The Test stage executes the application's tests before deployment can continue.
+
+The production build is transferred between stages using Azure DevOps Pipeline Artifacts. During the Publish stage, the deployment artifact is verified and published for use by the Deploy stage. The Deploy stage downloads the artifact and uses an Azure DevOps SSH Service Connection to securely transfer the compiled React files to /var/www/html on the Ubuntu VM.
+
+Nginx serves the deployed React application from the VM, with SPA routing configured through Ansible. The deployment is verified by confirming that index.html and the compiled assets exist in /var/www/html, Nginx is active, and the application responds successfully over HTTP. This workflow provides an automated CI/CD process from a commit to main through production deployment.
 
 ---
 
@@ -174,11 +178,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![alt text](screenshots/POST-ASS03.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://lnkd.in/p/exz6Nnmh
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
@@ -199,27 +203,27 @@ Add your screenshot here.
 
 # Completion Checklist
 
-* [ ] All tasks were completed in sequence
-* [ ] The correct React repository was imported into Azure Repos
-* [ ] Your Full Name and date were added to the application
-* [ ] The pipeline YAML was authored and committed to the repository
-* [ ] Commits to `main` trigger the pipeline automatically
-* [ ] The pipeline contains Build, Test, Publish, and Deploy stages
-* [ ] All four stages succeeded in the same pipeline run
-* [ ] The production build moved between stages as a pipeline artifact
-* [ ] The Deploy stage used the SSH Service Connection
-* [ ] No password or secret is stored in the YAML
-* [ ] `index.html` is directly inside `/var/www/html`
-* [ ] Raw React source code was not deployed to the Nginx web root
-* [ ] `node_modules/` was not deployed to the Nginx web root
-* [ ] Nginx is active
-* [ ] The application opens through the VM public IP address
-* [ ] Your Full Name and date are visible in the browser screenshot
-* [ ] Screenshots 1–6 are included and readable
-* [ ] No password, token, private key, account ID, or other secret is visible
-* [ ] The final application URL is included
-* [ ] The LinkedIn post is published
-* [ ] The LinkedIn post URL is included
+* [x] All tasks were completed in sequence
+* [x] The correct React repository was imported into Azure Repos
+* [x] Your Full Name and date were added to the application
+* [x] The pipeline YAML was authored and committed to the repository
+* [x] Commits to `main` trigger the pipeline automatically
+* [x] The pipeline contains Build, Test, Publish, and Deploy stages
+* [x] All four stages succeeded in the same pipeline run
+* [x] The production build moved between stages as a pipeline artifact
+* [x] The Deploy stage used the SSH Service Connection
+* [x] No password or secret is stored in the YAML
+* [x] `index.html` is directly inside `/var/www/html`
+* [x] Raw React source code was not deployed to the Nginx web root
+* [x] `node_modules/` was not deployed to the Nginx web root
+* [x] Nginx is active
+* [x] The application opens through the VM public IP address
+* [x] Your Full Name and date are visible in the browser screenshot
+* [x] Screenshots 1–6 are included and readable
+* [x] No password, token, private key, account ID, or other secret is visible
+* [x] The final application URL is included
+* [x] The LinkedIn post is published
+* [x] The LinkedIn post URL is included
 
 ---
 
