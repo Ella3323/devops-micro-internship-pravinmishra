@@ -30,7 +30,7 @@ cat .dockerignore
 
 The file must exclude `node_modules`, `build`, and `.env`.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-02-SS1.png)
 
 ---
 
@@ -46,7 +46,7 @@ Create a baseline single-stage Docker image and run the application on port 3000
 
 Add a screenshot showing the completed `Dockerfile.single`.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-02-SS2.png)
 
 ---
 
@@ -60,7 +60,7 @@ http://localhost:3000
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-02-SS3.png)
 
 ---
 
@@ -76,7 +76,7 @@ Create an optimized multi-stage Docker image with separate builder and Nginx run
 
 Add a screenshot showing the completed multi-stage `Dockerfile`.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-02-SS4.png)
 
 ---
 
@@ -90,7 +90,7 @@ http://localhost
 
 Ensure that your full name is visible in the application.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-02-SS5.png)
 
 ---
 
@@ -117,8 +117,10 @@ react-single:latest
 react-multistage:latest
 ```
 
-Add your screenshot here.
-
+![alt text](screenshots/ASSIGNMENT-02-SS6.png)
+![alt text](screenshots/ASSIGNMENT-02-SS6a2.png)
+![alt text](screenshots/ASSIGNMENT-02-SS6b.png)
+![alt text](screenshots/ASSIGNMENT-02-SS6c.png)
 ---
 
 ### Percentage Reduction Calculation
@@ -134,8 +136,11 @@ Percentage reduction =
 ((Single-stage image size − Multi-stage image size)
 ÷ Single-stage image size) × 100
 
-Percentage reduction: Add result here
-```
+((509 − 26.6) ÷ 509) × 100
+= (482.4 ÷ 509) × 100
+= 0.94774 × 100
+= 94.77%
+
 
 ---
 
@@ -156,7 +161,12 @@ Write a short analysis of 5–8 lines covering:
 - How smaller images improve image pull and deployment speed
 - One Docker build-caching optimization you used
 
-Write your analysis here.
+The single-stage image (react-single:latest) is 2.2 GB on disk, while the multi-stage image (react-multistage:latest) is 95.1 MB, a 95.68% reduction (94.77% based on compressed content size: 509 MB vs 26.6 MB).
+The reduction comes from the final runtime image containing only Nginx and the compiled build/ files. Node.js, the source code, node_modules and the build tools stay behind in the builder stage.
+This improves security: fewer packages and tools in the runtime image mean fewer components that can contain vulnerabilities, and an attacker who gets into the container has far fewer tools to work with.
+A smaller attack surface also means fewer CVEs reported by image scanners and less patching work.
+Smaller images pull faster from a registry and start faster, which speeds up deployments, scaling and rollbacks, and reduces storage and bandwidth costs.
+For build caching, I copied package.json and package-lock.json before the rest of the source code and ran npm ci before COPY . . — so code-only changes reuse the cached dependency layer instead of reinstalling every package. The builder steps were identical in both Dockerfiles, so the multi-stage build reused the cached layers from the single-stage build.
 
 ---
 

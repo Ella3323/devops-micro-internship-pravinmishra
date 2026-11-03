@@ -92,8 +92,8 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 #### Screenshot 4 — Claude Code showing the five-check plan
 
-![alt text](screenshots/Assignment7-SS4.png)
-
+![alt text](screenshots/Assignment7-SS4A.png)
+![alt text](screenshots/Assignment7-SS4B.png)
 ---
 
 ### Notes You Must Write (Very Important)

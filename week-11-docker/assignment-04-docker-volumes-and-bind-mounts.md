@@ -308,7 +308,17 @@ Write a short explanation covering:
 - How Task 2 proved Docker Volume persistence
 - Why Docker Volumes are commonly used for application data
 
-Write your explanation here.
+The difference between a Bind Mount and a Docker Volume
+A bind mount links a specific folder that I choose on the server to a folder inside the container. A Docker volume is storage that Docker creates and manages itself; I only refer to it by name. Both keep data outside the container. The difference is who controls the location: with a bind mount it’s me, and with a volume it’s Docker.
+
+How Task 1 proved Bind Mount persistence
+I linked the server folder ~/nginx-logs to Nginx’s log folder inside the container. When I visited the website, the visit was recorded in access.log, and that file appeared directly on the server. I then stopped and deleted the container. The log files were still on the server with the same entries, which proved the data didn’t depend on the container.
+
+How Task 2 proved Docker Volume persistence
+I created a volume called shared-data and attached it to two containers. The backend wrote a message into a file in the volume, and the frontend read the same file and displayed it in the browser. I updated the message twice, and each change appeared after a refresh. Finally, I deleted both containers and created new ones using the same volume. The browser still showed “Test Data 2 - New Update”, which proved the data outlived both containers.
+
+Why Docker Volumes are commonly used for application data
+Volumes are managed by Docker, so they don’t depend on a particular folder existing on the server, and they work the same way on any machine. They’re kept safe when containers are deleted, replaced or upgraded, and they can be shared between containers. That makes them the standard choice for data an app must not lose, such as databases, uploaded files and reports.
 
 ---
 
