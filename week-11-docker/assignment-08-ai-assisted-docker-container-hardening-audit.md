@@ -33,7 +33,7 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS1.png)
 
 ---
 
@@ -49,7 +49,7 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS2.png)
 
 ---
 
@@ -70,7 +70,7 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS3.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS4.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS5.png)
 
 ---
 
@@ -119,8 +119,8 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
-
+![alt text](screenshots/ASSIGNMENT-08-SS6a.png)
+![alt text](screenshots/ASSIGNMENT-08-SS6b.png)
 ---
 
 # Task 6 — Apply One Container-Hardening Fix
@@ -135,7 +135,7 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS7.png)
 
 ---
 
@@ -143,7 +143,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS8.png)
 
 ---
 
@@ -163,7 +163,7 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
+![alt text](screenshots/ASSIGNMENT-08-SS9.png)
 
 ---
 
@@ -176,7 +176,17 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
+Initial audit finding
+The first audit of theepicbook-frontend-1 returned two warnings. The container ran as root (no non-root user configured), and the image used the floating latest tag (epicbook-frontend:latest). Health check, privileged mode and published ports passed.
+
+Dockerfile and Docker Compose change applied
+In frontend/Dockerfile, I switched to the unprivileged Nginx image nginxinc/nginx-unprivileged:1.27-alpine and added USER nginx, so the container runs as a non-root user. Because that image listens on port 8080, I updated the frontend health check in docker-compose.yml and the proxy upstream in proxy/nginx.conf to port 8080. In docker-compose.yml, I also changed the image tag from epicbook-frontend:latest to epicbook-frontend:1.0.0. I rebuilt and recreated only the frontend, plus the proxy for its config change.
+
+Final audit result
+Both warnings were resolved. Container user: PASS (it runs as nginx) and Image tag: PASS (epicbook-frontend:1.0.0). The other checks still passed, the frontend was healthy, and static files loaded with HTTP 200 through the reverse proxy.
+
+Security benefit of the improvement
+If the container were ever compromised, an attacker would only have limited user permissions instead of root, which reduces the damage they could do. A pinned version tag makes deployments predictable, because the exact version running is always known and can’t change unexpectedly.
 
 ---
 

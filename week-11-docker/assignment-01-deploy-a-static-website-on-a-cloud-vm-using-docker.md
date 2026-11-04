@@ -210,11 +210,11 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn Post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/feed/update/urn:li:activity:7523273345363087360/
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![alt text](screenshots/linkedin-01.png)
 
 ---
 
