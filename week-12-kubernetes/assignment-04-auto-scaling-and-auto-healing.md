@@ -42,13 +42,17 @@ Add your screenshot here.
 
 **1. What is the difference between auto-healing and auto-scaling?**
 
-Add your answer here.
+Auto-healing keeps the number of Pods the same. If a Pod fails, crashes or is deleted, Kubernetes automatically creates a replacement to restore the desired count. In a Deployment, its ReplicaSet does this: if replicas: 2 is set and one Pod disappears, a new one is created straight away.
+
+Auto-scaling changes the number of Pods. It increases or decreases the desired count based on demand, such as CPU usage. When traffic rises, more Pods are added to handle the load. When traffic falls, extra Pods are removed so resources aren’t wasted.
+
+In short, auto-healing restores the current target, while auto-scaling adjusts the target itself.
 
 ---
 
 **2. Which Kubernetes feature will you use for CPU-based auto-scaling?**
 
-Add your answer here.
+The Horizontal Pod Autoscaler (HPA). It reads CPU usage from Metrics Server and adjusts the Deployment’s replica count between a set minimum and maximum. In this lab that’s 2 to 5 Pods, keeping average CPU utilization close to the target of 50% of each Pod’s requested CPU.
 
 ---
 
@@ -88,19 +92,19 @@ Add your screenshot here.
 
 **1. What happened after you deleted one Pod?**
 
-Add your answer here.
+I deleted the Pod demo-autohealing-758c898b7-fg6k8, and it was terminated. Kubernetes immediately created a replacement Pod, demo-autohealing-758c898b7-wmrdj, without any action from me. When I checked again, the Deployment had two Pods in the Running state with 1/1 ready: the original Pod demo-autohealing-758c898b7-mf7tm, aged 2 minutes 43 seconds, and the new replacement demo-autohealing-758c898b7-wmrdj, aged only 12 seconds. The desired count of two Pods was restored automatically.
 
 ---
 
 **2. What Kubernetes resource maintains the desired replica count for this Deployment?**
 
-Add your answer here.
+The ReplicaSet that the demo-autohealing Deployment created automatically. It continuously compares the desired count (replicas: 2) with the number of running Pods matching its selector (app: autoheal), and creates a new Pod whenever one is missing
 
 ---
 
 **3. What proves that auto-healing worked?**
 
-Add your answer here.
+After the deletion, kubectl get pods again showed two demo-autohealing Pods in the Running state. One of them had a new name and a very recent age, proving it was created automatically to replace the deleted Pod.
 
 ---
 
@@ -128,19 +132,27 @@ Add your screenshot here.
 
 **1. What does `cpu: "100m"` mean?**
 
-Add your answer here.
+A CPU request is the amount of CPU guaranteed to the container. Kubernetes uses it when scheduling, placing the Pod only on a node with enough free CPU, and reserves that amount for it. In this Deployment, each Pod is guaranteed 100m.
 
 ---
 
 **2. What is the difference between a CPU request and a CPU limit?**
 
-Add your answer here.
+A CPU request is the amount of CPU guaranteed to the container. Kubernetes uses it when scheduling, placing the Pod only on a node with enough free CPU, and reserves that amount for it. In this Deployment, each Pod is guaranteed 100m.
+
+A CPU limit is the maximum CPU the container is allowed to use. If the container tries to use more, Kubernetes throttles it (slows it down) instead of letting it take more. In this Deployment, each Pod can use up to 200m.
+
+In short, the request is the minimum it can count on, and the limit is the most it may use.
 
 ---
 
 **3. Why does CPU-based HPA require CPU requests?**
 
-Add your answer here.
+A CPU request is the amount of CPU guaranteed to the container. Kubernetes uses it when scheduling, placing the Pod only on a node with enough free CPU, and reserves that amount for it. In this Deployment, each Pod is guaranteed 100m.
+
+A CPU limit is the maximum CPU the container is allowed to use. If the container tries to use more, Kubernetes throttles it (slows it down) instead of letting it take more. In this Deployment, each Pod can use up to 200m.
+
+In short, the request is the minimum it can count on, and the limit is the most it may use.
 
 ---
 
@@ -162,13 +174,13 @@ Add your screenshot here.
 
 **1. Why does HPA need Metrics Server?**
 
-Add your answer here.
+The HPA decides whether to add or remove Pods by comparing actual CPU usage with its target. It doesn’t measure CPU itself: it reads those numbers from the Metrics API, which Metrics Server provides by collecting resource usage from each node’s kubelet. Without Metrics Server, the HPA has no data to act on.
 
 ---
 
 **2. What issue can occur if Metrics Server is not working?**
 
-Add your answer here.
+The HPA can’t read CPU usage, so its TARGETS column shows <unknown>, and it can’t scale the Deployment up or down, even during heavy load. kubectl top commands also fail with an error such as “Metrics API not available”.
 
 ---
 
@@ -202,25 +214,25 @@ Add your screenshot here.
 
 **1. What does `minReplicas: 2` mean?**
 
-Add your answer here.
+The HPA will never scale the Deployment below two Pods, even when there’s no traffic. That keeps a baseline of capacity and availability, so the application can survive one Pod failing.
 
 ---
 
 **2. What does `maxReplicas: 5` mean?**
 
-Add your answer here.
+The HPA will never scale the Deployment above five Pods, however high CPU usage goes. This caps resource use and cost, and protects the cluster from one workload taking all its capacity.
 
 ---
 
 **3. What does `averageUtilization: 50` mean?**
 
-Add your answer here.
+The HPA tries to keep average CPU usage across all the Pods at about 50% of their requested CPU. Each Pod requests 100m, so the target is about 50m per Pod. If the average rises above that, the HPA adds Pods. If it falls well below, the HPA removes Pods, staying between 2 and 5.
 
 ---
 
 **4. Why should only one HPA manage a Deployment at a time?**
 
-Add your answer here.
+Each HPA independently sets the Deployment’s replica count. Two HPAs would compete, each overriding the other’s decisions, so the Pod count would keep jumping up and down unpredictably. One HPA per Deployment gives a single, consistent decision-maker.
 
 ---
 

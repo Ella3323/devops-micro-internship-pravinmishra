@@ -224,22 +224,21 @@ Add the URL of your published LinkedIn post here.
 
 # Completion Checklist
 
-- [ ] Completed Task 0 and confirmed that the previous `nginx-pod` is no longer listed
-- [ ] Created and entered the ReplicaSet working directory (Screenshot 01)
-- [ ] Created `nginx-replicaset.yaml` with an initial replica count of three (Screenshot 02)
-- [ ] Applied the ReplicaSet manifest successfully (Screenshot 03)
-- [ ] Confirmed three NGINX Pods are running (Screenshot 04)
-- [ ] Deleted one ReplicaSet-managed Pod (Screenshot 05)
-- [ ] Observed the automatically created replacement Pod (Screenshot 06)
-- [ ] Confirmed three NGINX Pods are running again (Screenshot 07)
-- [ ] Changed the replica count from three to five (Screenshot 08)
-- [ ] Confirmed five NGINX Pods are running (Screenshot 09)
-- [ ] Submitted the final `nginx-replicaset.yaml` file with `replicas: 5`
-- [ ] Completed the Notes sections in Tasks 1–4
-- [ ] Published the LinkedIn post with the required explanation and Pod screenshot (Screenshot 10)
-- [ ] Included the published LinkedIn post URL
-- [ ] Included all required screenshots
-- [ ] No sensitive data exposed
+- [x] Completed Task 0 and confirmed that the previous `nginx-pod` is no longer listed
+- [x] Created and entered the ReplicaSet working directory (Screenshot 01)
+- [x] Created `nginx-replicaset.yaml` with an initial replica count of three (Screenshot 02)
+- [x] Applied the ReplicaSet manifest successfully (Screenshot 03)
+- [x] Confirmed three NGINX Pods are running (Screenshot 04)
+- [x] Deleted one ReplicaSet-managed Pod (Screenshot 05)
+- [x] Observed the automatically created replacement Pod (Screenshot 06)
+- [x] Confirmed three NGINX Pods are running again (Screenshot 07)
+- [x] Changed the replica count from three to five (Screenshot 08)
+- [x] Confirmed five NGINX Pods are running (Screenshot 09)
+- [x] Submitted the final `nginx-replicaset.yaml` file with `replicas: 5`
+- [x] Completed the Notes sections in Tasks 1–4
+- [x] Published the LinkedIn post with the required explanation and Pod screenshot (Screenshot 10)
+- [x] Included all required screenshots
+- [x] No sensitive data exposed
 
 ---
 

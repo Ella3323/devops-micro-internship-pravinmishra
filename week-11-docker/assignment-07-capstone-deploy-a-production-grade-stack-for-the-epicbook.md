@@ -662,12 +662,13 @@ Your post must include:
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/feed/update/urn:li:activity:7523939565548609539/
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post showing the text body and deployment verification image.
 
+![alt text](image-1.png)
 ---
 
 # Submission Checklist

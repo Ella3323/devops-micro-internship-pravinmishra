@@ -303,11 +303,11 @@ Create a LinkedIn post about the Book Review App deployment and what you learned
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/feed/update/urn:li:activity:7523937861780480000/
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of your published LinkedIn post here.
+![alt text](screenshots/linkedin-06.png)
 
 ---
 

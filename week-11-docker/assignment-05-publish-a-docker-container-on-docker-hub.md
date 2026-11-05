@@ -169,13 +169,13 @@ Include:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/feed/update/urn:li:activity:7523935920568451072/
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![alt text](screenshots/linkedin-05.png)
 
 ---
 

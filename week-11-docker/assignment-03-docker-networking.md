@@ -358,13 +358,13 @@ Create a LinkedIn post about the Docker networking modes explored, one key lesso
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/feed/update/urn:li:activity:7523924043482370049/
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+![alt text](screenshots/linkedin-03.png)
 
 ---
 

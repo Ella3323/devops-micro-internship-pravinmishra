@@ -201,13 +201,13 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/feed/update/urn:li:activity:7523918107808190465/
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here.
+week-11-docker/screenshots/linkedin-02.png
 
 ---
 
@@ -224,18 +224,18 @@ Add a screenshot of the published LinkedIn post here.
 
 # Completion Checklist
 
-- [ ] Assignment completed locally
-- [ ] `.dockerignore` created and verified (Screenshot 1)
-- [ ] `Dockerfile.single` created (Screenshot 2)
-- [ ] Single-stage container verified in the browser (Screenshot 3)
-- [ ] Multi-stage `Dockerfile` created (Screenshot 4)
-- [ ] Multi-stage container verified in the browser (Screenshot 5)
-- [ ] Both Docker image sizes captured (Screenshot 6)
-- [ ] Percentage reduction calculated
-- [ ] Optimization analysis completed
-- [ ] LinkedIn post URL and screenshot included
-- [ ] Full name visible in all required screenshots
-- [ ] No sensitive information exposed
+- [x] Assignment completed locally
+- [x] `.dockerignore` created and verified (Screenshot 1)
+- [x] `Dockerfile.single` created (Screenshot 2)
+- [x] Single-stage container verified in the browser (Screenshot 3)
+- [x] Multi-stage `Dockerfile` created (Screenshot 4)
+- [x] Multi-stage container verified in the browser (Screenshot 5)
+- [x] Both Docker image sizes captured (Screenshot 6)
+- [x] Percentage reduction calculated
+- [x] Optimization analysis completed
+- [x] LinkedIn post URL and screenshot included
+- [x] Full name visible in all required screenshots
+- [x] No sensitive information exposed
 
 ---
 

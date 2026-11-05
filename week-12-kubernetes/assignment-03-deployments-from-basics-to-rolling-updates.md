@@ -189,23 +189,23 @@ Add your answer here.
 
 # Completion Checklist
 
-- [ ] Completed Task 0
-- [ ] Created the deployments directory (Screenshot 01)
-- [ ] Created the basic two-replica NGINX Deployment manifest (Screenshot 02)
-- [ ] Applied the Deployment and verified its ReplicaSet and two running Pods (Screenshot 03)
-- [ ] Added RollingUpdate with `maxSurge: 1` and `maxUnavailable: 0` (Screenshot 04)
-- [ ] Applied and verified the rolling-update strategy (Screenshot 05)
-- [ ] Updated NGINX to 1.23.1 and confirmed rollout completion (Screenshot 06)
-- [ ] Inspected the ReplicaSets and verified the updated image (Screenshot 07)
-- [ ] Rolled back the update and confirmed rollout completion (Screenshot 08)
-- [ ] Reviewed rollout history and verified the restored image (Screenshot 09)
-- [ ] Scaled to five running Pods (Screenshot 10)
-- [ ] Scaled back to two running Pods (Screenshot 11)
-- [ ] Published the WhatsApp Status with the generated leaderboard progress link (Screenshot 12)
-- [ ] Submitted the final `nginx-deployment.yaml`
-- [ ] Included screenshots 01–12
-- [ ] Completed the Lab Summary
-- [ ] No sensitive data exposed
+- [x] Completed Task 0
+- [x] Created the deployments directory (Screenshot 01)
+- [x] Created the basic two-replica NGINX Deployment manifest (Screenshot 02)
+- [x] Applied the Deployment and verified its ReplicaSet and two running Pods (Screenshot 03)
+- [x] Added RollingUpdate with `maxSurge: 1` and `maxUnavailable: 0` (Screenshot 04)
+- [x] Applied and verified the rolling-update strategy (Screenshot 05)
+- [x] Updated NGINX to 1.23.1 and confirmed rollout completion (Screenshot 06)
+- [x] Inspected the ReplicaSets and verified the updated image (Screenshot 07)
+- [x] Rolled back the update and confirmed rollout completion (Screenshot 08)
+- [x] Reviewed rollout history and verified the restored image (Screenshot 09)
+- [x] Scaled to five running Pods (Screenshot 10)
+- [x] Scaled back to two running Pods (Screenshot 11)
+- [x] Published the WhatsApp Status with the generated leaderboard progress link (Screenshot 12)
+- [x] Submitted the final `nginx-deployment.yaml`
+- [x] Included screenshots 01–12
+- [x] Completed the Lab Summary
+- [x] No sensitive data exposed
 
 ---
 

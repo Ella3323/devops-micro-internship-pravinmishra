@@ -198,13 +198,13 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/feed/update/urn:li:activity:7523941658523058176/
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
+![alt text](screenshots/linkedin-08.png)
 
 ---
 
@@ -220,19 +220,19 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Audit workspace created and supplied files verified
-- [ ] `docker-audit` skill added to Claude Code
-- [ ] Audit script validated successfully
-- [ ] Running target container identified
-- [ ] Initial Docker audit completed
-- [ ] Claude Code explanation of findings captured
-- [ ] One hardening fix applied manually
-- [ ] Affected service or container rebuilt and recreated
-- [ ] Final Docker audit completed
-- [ ] Before-and-after comparison completed
-- [ ] Screenshots 1–9 included
-- [ ] LinkedIn post URL and screenshot included
-- [ ] No sensitive information exposed
+- [x] Audit workspace created and supplied files verified
+- [x] `docker-audit` skill added to Claude Code
+- [x] Audit script validated successfully
+- [x] Running target container identified
+- [x] Initial Docker audit completed
+- [x] Claude Code explanation of findings captured
+- [x] One hardening fix applied manually
+- [x] Affected service or container rebuilt and recreated
+- [x] Final Docker audit completed
+- [x] Before-and-after comparison completed
+- [x] Screenshots 1–9 included
+- [x] LinkedIn post URL and screenshot included
+- [x] No sensitive information exposed
 
 ---
 
